@@ -1,0 +1,2042 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>动画动漫 - 精选电影大全</title>
+  <meta name="description" content="动画动漫提供精选电影、剧集、动画和热门片单浏览，支持搜索与筛选。">
+  <meta name="keywords" content="动画动漫,精选电影大全,精选电影合集,高清播放,热门电影,高分电影,电影片库">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="精选电影大全">
+      <span class="brand-mark">★</span>
+      <span class="brand-name">精选电影大全</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link active" href="./categories.html">分类</a>
+      <a class="nav-link" href="./category-all.html">全部影片</a>
+      <a class="nav-link" href="./rankings.html">排行榜</a>
+    </nav>
+    <button class="menu-button" type="button" data-menu-toggle aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-menu>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a class="mobile-link" href="./index.html">首页</a>
+      <a class="mobile-link" href="./categories.html">分类</a>
+      <a class="mobile-link" href="./category-all.html">全部影片</a>
+      <a class="mobile-link" href="./rankings.html">排行榜</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero small-hero">
+  <div class="shell">
+    <nav class="crumbs" aria-label="面包屑">
+      <a href="./index.html">首页</a>
+      <span>›</span>
+      <a href="./categories.html">分类</a>
+      <span>›</span>
+      <strong>动画动漫</strong>
+    </nav>
+    <span class="eyebrow">Movie List</span>
+    <h1>动画动漫</h1>
+    <p>动画动漫收录适合连看与收藏的精选内容。</p>
+  </div>
+</section>
+<section class="section shell">
+  <section class="filter-card" data-filter-panel>
+  <div class="filter-search">
+    <input id="movie-search" type="search" name="q" autocomplete="off" placeholder="搜索影片、题材、演员关键词">
+    <button id="filter-clear" type="button">重置</button>
+  </div>
+  <div class="filter-selects">
+    <select id="filter-region" aria-label="地区筛选">
+      <option value="">全部地区</option>
+      <option value="中国大陆">中国大陆</option>
+      <option value="美国">美国</option>
+      <option value="日本">日本</option>
+      <option value="中国香港">中国香港</option>
+      <option value="韩国">韩国</option>
+      <option value="英国">英国</option>
+      <option value="中国台湾">中国台湾</option>
+      <option value="法国">法国</option>
+      <option value="中国">中国</option>
+      <option value="泰国">泰国</option>
+      <option value="德国">德国</option>
+      <option value="香港">香港</option>
+      <option value="西班牙">西班牙</option>
+      <option value="印度">印度</option>
+      <option value="俄罗斯">俄罗斯</option>
+      <option value="意大利">意大利</option>
+      <option value="法国/比利时">法国/比利时</option>
+      <option value="台湾">台湾</option>
+      <option value="加拿大">加拿大</option>
+      <option value="法国/意大利">法国/意大利</option>
+      <option value="澳大利亚">澳大利亚</option>
+      <option value="美国/英国">美国/英国</option>
+      <option value="英国/美国">英国/美国</option>
+      <option value="中国内地">中国内地</option>
+      <option value="波兰">波兰</option>
+      <option value="马来西亚">马来西亚</option>
+      <option value="新加坡">新加坡</option>
+      <option value="法国/德国">法国/德国</option>
+      <option value="瑞典">瑞典</option>
+      <option value="美国/墨西哥">美国/墨西哥</option>
+      <option value="中国大陆/中国香港">中国大陆/中国香港</option>
+      <option value="中国香港/中国大陆">中国香港/中国大陆</option>
+      <option value="挪威">挪威</option>
+      <option value="新西兰">新西兰</option>
+      <option value="美国/德国">美国/德国</option>
+    </select>
+    <select id="filter-type" aria-label="类型筛选">
+      <option value="">全部类型</option>
+      <option value="电影">电影</option>
+      <option value="剧集">剧集</option>
+      <option value="电视剧">电视剧</option>
+      <option value="动画电影">动画电影</option>
+      <option value="动画剧集">动画剧集</option>
+      <option value="综艺">综艺</option>
+      <option value="动画">动画</option>
+      <option value="纪录片">纪录片</option>
+      <option value="网络电影">网络电影</option>
+      <option value="网络剧">网络剧</option>
+      <option value="TV 动画">TV 动画</option>
+      <option value="TV剧集">TV剧集</option>
+      <option value="TV动画">TV动画</option>
+      <option value="剧集/动画">剧集/动画</option>
+      <option value="动漫">动漫</option>
+      <option value="动画短片">动画短片</option>
+      <option value="电影/动画">电影/动画</option>
+      <option value="电视剧集">电视剧集</option>
+      <option value="网剧">网剧</option>
+      <option value="Movie">Movie</option>
+      <option value="TV">TV</option>
+      <option value="TV Series">TV Series</option>
+      <option value="剧场版">剧场版</option>
+      <option value="剧集 (8集)">剧集 (8集)</option>
+      <option value="剧集,动画">剧集,动画</option>
+      <option value="剧集/动画特别篇">剧集/动画特别篇</option>
+      <option value="剧集/电影">剧集/电影</option>
+      <option value="动态漫画">动态漫画</option>
+      <option value="动画特辑">动画特辑</option>
+      <option value="特别篇">特别篇</option>
+      <option value="电影 (动画)">电影 (动画)</option>
+      <option value="电影 动作">电影 动作</option>
+      <option value="电影/剧集">电影/剧集</option>
+      <option value="电影/纪录">电影/纪录</option>
+      <option value="电影/网络电影">电影/网络电影</option>
+    </select>
+    <select id="filter-year" aria-label="年份筛选">
+      <option value="">全部年份</option>
+      <option value="2030">2030</option>
+      <option value="2029">2029</option>
+      <option value="2028">2028</option>
+      <option value="2027">2027</option>
+      <option value="2026">2026</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+      <option value="1999">1999</option>
+      <option value="1998">1998</option>
+      <option value="1997">1997</option>
+      <option value="1996">1996</option>
+    </select>
+  </div>
+</section>
+  <div class="movie-grid catalog-grid" data-movie-list>
+    <article class="movie-card" data-title="奇迹少女:上海篇" data-region="中国大陆" data-type="动画电影" data-year="2024" data-genre="动画/奇幻/冒险">
+  <a class="movie-poster" href="./movie-0025.html" aria-label="奇迹少女:上海篇">
+    <img src="./25.jpg" alt="奇迹少女:上海篇" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0025.html">奇迹少女:上海篇</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 动画/奇幻/冒险</p>
+    <p class="movie-desc">上海弄堂少女意外继承魔法斗篷,为保护百年石库门对抗地产开发商的黑暗法术。</p>
+    <div class="tag-row"><span>少女</span><span>魔法</span><span>上海</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="攻壳机动队:崛起2" data-region="日本" data-type="动画剧集" data-year="2026" data-genre="科幻/犯罪/赛博朋克">
+  <a class="movie-poster" href="./movie-0072.html" aria-label="攻壳机动队:崛起2">
+    <img src="./72.jpg" alt="攻壳机动队:崛起2" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0072.html">攻壳机动队:崛起2</a></h2>
+    <p class="movie-meta">2026 · 动画剧集 · 科幻/犯罪/赛博朋克</p>
+    <p class="movie-desc">少佐的义体被植入虚假记忆,她必须在信任与数据之间做出终极选择。</p>
+    <div class="tag-row"><span>义体人</span><span>黑客</span><span>公安九课</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="星际牛仔:天国之门" data-region="日本" data-type="动画电影" data-year="2026" data-genre="科幻/动作/西部">
+  <a class="movie-poster" href="./movie-0074.html" aria-label="星际牛仔:天国之门">
+    <img src="./74.jpg" alt="星际牛仔:天国之门" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0074.html">星际牛仔:天国之门</a></h2>
+    <p class="movie-meta">2026 · 动画电影 · 科幻/动作/西部</p>
+    <p class="movie-desc">一块来自“天国之门”事件的神秘芯片,让Spike等人卷入跨星系阴谋。</p>
+    <div class="tag-row"><span>太空歌剧</span><span>赏金猎人</span><span>爵士乐</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="波拉大历险" data-region="美国" data-type="动画电影" data-year="2019" data-genre="动画/冒险/家庭">
+  <a class="movie-poster" href="./movie-0093.html" aria-label="波拉大历险">
+    <img src="./93.jpg" alt="波拉大历险" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0093.html">波拉大历险</a></h2>
+    <p class="movie-meta">2019 · 动画电影 · 动画/冒险/家庭</p>
+    <p class="movie-desc">为了拯救被诅咒的森林,胆小的小狐狸波拉必须穿越禁忌之地,解开古老的谜题。</p>
+    <div class="tag-row"><span>奇幻</span><span>勇气</span><span>友情</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大神偷卡门第一季" data-region="美国" data-type="动画剧集" data-year="2025" data-genre="动作、冒险、悬疑">
+  <a class="movie-poster" href="./movie-0098.html" aria-label="大神偷卡门第一季">
+    <img src="./98.jpg" alt="大神偷卡门第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0098.html">大神偷卡门第一季</a></h2>
+    <p class="movie-meta">2025 · 动画剧集 · 动作、冒险、悬疑</p>
+    <p class="movie-desc">国际顶尖大盗卡门,每集盗取一件绝世珍宝,实则是在追查导致父母失踪的邪恶组织线索。</p>
+    <div class="tag-row"><span>女性侠盗</span><span>全球冒险</span><span>亦正亦邪</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="星游记之风暴法米拉2" data-region="中国大陆" data-type="电影" data-year="2023" data-genre="动画/冒险">
+  <a class="movie-poster" href="./movie-0117.html" aria-label="星游记之风暴法米拉2">
+    <img src="./117.jpg" alt="星游记之风暴法米拉2" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0117.html">星游记之风暴法米拉2</a></h2>
+    <p class="movie-meta">2023 · 电影 · 动画/冒险</p>
+    <p class="movie-desc">为了救治伙伴,麦当在法米拉竞技场直面黑暗势力,却发现“风暴眼”背后藏着关于地球的真相。</p>
+    <div class="tag-row"><span>热血</span><span>宇宙冒险</span><span>续作</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="海绵宝宝国语" data-region="美国" data-type="动画" data-year="1999" data-genre="喜剧,动画,家庭">
+  <a class="movie-poster" href="./movie-0124.html" aria-label="海绵宝宝国语">
+    <img src="./124.jpg" alt="海绵宝宝国语" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0124.html">海绵宝宝国语</a></h2>
+    <p class="movie-meta">1999 · 动画 · 喜剧,动画,家庭</p>
+    <p class="movie-desc">一块会说话的海绵在海底炸蟹堡,和他的笨海星朋友气坏了章鱼哥。</p>
+    <div class="tag-row"><span>比基尼海滩</span><span>蟹堡王</span><span>派大星</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="老鼠开会" data-region="中国大陆" data-type="电影" data-year="2025" data-genre="动画、悬疑">
+  <a class="movie-poster" href="./movie-0129.html" aria-label="老鼠开会">
+    <img src="./129.jpg" alt="老鼠开会" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0129.html">老鼠开会</a></h2>
+    <p class="movie-meta">2025 · 电影 · 动画、悬疑</p>
+    <p class="movie-desc">一栋废弃大楼的地下室,每晚老鼠都在开会,讨论如何杀死那只不吃老鼠的猫。</p>
+    <div class="tag-row"><span>寓言</span><span>黑色幽默</span><span>政治隐喻</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="里世界郊游" data-region="日本" data-type="动画" data-year="2024" data-genre="悬疑,恐怖,冒险,百合">
+  <a class="movie-poster" href="./movie-0150.html" aria-label="里世界郊游">
+    <img src="./150.jpg" alt="里世界郊游" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0150.html">里世界郊游</a></h2>
+    <p class="movie-meta">2024 · 动画 · 悬疑,恐怖,冒险,百合</p>
+    <p class="movie-desc">两个女孩在网络怪谈“里世界”中探险,一个想找回失踪好友,一个想找回自己丢失的记忆,却发现里世界是人心的镜子。</p>
+    <div class="tag-row"><span>都市传说</span><span>异世界</span><span>女性主角</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="妄想学生会第一季" data-region="日本" data-type="剧集" data-year="2010" data-genre="喜剧/校园/动漫">
+  <a class="movie-poster" href="./movie-0154.html" aria-label="妄想学生会第一季">
+    <img src="./4.jpg" alt="妄想学生会第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0154.html">妄想学生会第一季</a></h2>
+    <p class="movie-meta">2010 · 剧集 · 喜剧/校园/动漫</p>
+    <p class="movie-desc">一所由贵族女校改为男女合校的高中里,男生津田隆利被拉进全是美女的学生会,从此开始了天天被黄段子轰炸的日常。</p>
+    <div class="tag-row"><span>黄段子</span><span>吐槽</span><span>学生会</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="书灵记" data-region="中国大陆" data-type="动画" data-year="2024" data-genre="奇幻、冒险">
+  <a class="movie-poster" href="./movie-0157.html" aria-label="书灵记">
+    <img src="./7.jpg" alt="书灵记" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0157.html">书灵记</a></h2>
+    <p class="movie-meta">2024 · 动画 · 奇幻、冒险</p>
+    <p class="movie-desc">废柴大学生意外唤醒《山海经》书灵,为了阻止文字消失,他们必须重写神兽篇章。</p>
+    <div class="tag-row"><span>国风</span><span>古籍成精</span><span>热血</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大雄的宇宙开拓史" data-region="日本" data-type="动画电影" data-year="2025" data-genre="科幻,冒险,家庭">
+  <a class="movie-poster" href="./movie-0167.html" aria-label="大雄的宇宙开拓史">
+    <img src="./17.jpg" alt="大雄的宇宙开拓史" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0167.html">大雄的宇宙开拓史</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 科幻,冒险,家庭</p>
+    <p class="movie-desc">大雄与哆啦A梦意外连结到一个即将毁灭的宇宙农场,必须在星球爆炸前帮助外星伙伴找到新家园。</p>
+    <div class="tag-row"><span>哆啦A梦</span><span>太空移民</span><span>时空穿越</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="魔法战士李维" data-region="日本" data-type="剧集/动画" data-year="2025" data-genre="奇幻/动作/冒险">
+  <a class="movie-poster" href="./movie-0217.html" aria-label="魔法战士李维">
+    <img src="./67.jpg" alt="魔法战士李维" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0217.html">魔法战士李维</a></h2>
+    <p class="movie-meta">2025 · 剧集/动画 · 奇幻/动作/冒险</p>
+    <p class="movie-desc">落魄天才魔法师,驾驶远古机甲,向背叛他的魔法帝国复仇。</p>
+    <div class="tag-row"><span>魔法</span><span>机甲</span><span>硬核奇幻</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="我的裘可妹妹" data-region="日本" data-type="TV动画" data-year="2006" data-genre="喜剧,日常,奇幻">
+  <a class="movie-poster" href="./movie-0219.html" aria-label="我的裘可妹妹">
+    <img src="./69.jpg" alt="我的裘可妹妹" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0219.html">我的裘可妹妹</a></h2>
+    <p class="movie-meta">2006 · TV动画 · 喜剧,日常,奇幻</p>
+    <p class="movie-desc">独居大学生捡到一个自称“妹妹”的神秘少女,而她实际上是被遗忘的旧神社土地神。</p>
+    <div class="tag-row"><span>兄妹</span><span>同居</span><span>神明</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="阿松第三季" data-region="日本" data-type="TV 动画" data-year="2023" data-genre="喜剧,日常,恶搞">
+  <a class="movie-poster" href="./movie-0237.html" aria-label="阿松第三季">
+    <img src="./87.jpg" alt="阿松第三季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0237.html">阿松第三季</a></h2>
+    <p class="movie-meta">2023 · TV 动画 · 喜剧,日常,恶搞</p>
+    <p class="movie-desc">长不大的六胞胎继续用荒诞方式拆解成年人的社会规则,顺便毁掉每一次相亲。 松野家六胞胎NEET再度归来,这次他们连“什么都不做”这件事都要搞内卷。</p>
+    <div class="tag-row"><span>六子</span><span>无厘头</span><span>社会讽刺</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="肥猫斗小强电影版" data-region="中国香港" data-type="电影" data-year="2024" data-genre="动画,喜剧,动作">
+  <a class="movie-poster" href="./movie-0239.html" aria-label="肥猫斗小强电影版">
+    <img src="./89.jpg" alt="肥猫斗小强电影版" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国香港</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0239.html">肥猫斗小强电影版</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画,喜剧,动作</p>
+    <p class="movie-desc">当社区最懒的肥猫被迫与一只拥有高度智能的蟑螂小强展开深夜对决,一场关乎领地与尊严的史诗战争开始了。</p>
+    <div class="tag-row"><span>热血</span><span>萌宠</span><span>都市传说</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="中华小子" data-region="中国大陆/法国" data-type="电影" data-year="2027" data-genre="动作/动画/历史">
+  <a class="movie-poster" href="./movie-0246.html" aria-label="中华小子">
+    <img src="./96.jpg" alt="中华小子" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆/法国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0246.html">中华小子</a></h2>
+    <p class="movie-meta">2027 · 电影 · 动作/动画/历史</p>
+    <p class="movie-desc">清末,三个少林俗家弟子被派去护送一卷可召唤“神兵”的经书,但经书是假的,他们才是真的“神兵”。</p>
+    <div class="tag-row"><span>少林</span><span>少年</span><span>武术</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="浪客剑心明治剑客浪漫谭" data-region="日本" data-type="动画剧集" data-year="2024" data-genre="动作,历史,武士">
+  <a class="movie-poster" href="./movie-0256.html" aria-label="浪客剑心明治剑客浪漫谭">
+    <img src="./106.jpg" alt="浪客剑心明治剑客浪漫谭" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0256.html">浪客剑心明治剑客浪漫谭</a></h2>
+    <p class="movie-meta">2024 · 动画剧集 · 动作,历史,武士</p>
+    <p class="movie-desc">维新志士“刽子手拔刀斋”隐退十年后成了流浪剑客,却用逆刃刀守护着用血换来的和平。</p>
+    <div class="tag-row"><span>重制版</span><span>不杀之誓</span><span>明治维新</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="怪兽8号 第二季" data-region="日本" data-type="剧集" data-year="2025" data-genre="动画/动作/科幻">
+  <a class="movie-poster" href="./movie-0262.html" aria-label="怪兽8号 第二季">
+    <img src="./112.jpg" alt="怪兽8号 第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0262.html">怪兽8号 第二季</a></h2>
+    <p class="movie-meta">2025 · 剧集 · 动画/动作/科幻</p>
+    <p class="movie-desc">化为人形的怪兽“8号”加入防卫队后,面临着来自怪兽和人类的双重追杀。</p>
+    <div class="tag-row"><span>怪兽</span><span>变身英雄</span><span>防卫队</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="爱,死亡和机器人第四季" data-region="美国" data-type="剧集" data-year="2025" data-genre="科幻,奇幻,动画,恐怖">
+  <a class="movie-poster" href="./movie-0295.html" aria-label="爱,死亡和机器人第四季">
+    <img src="./145.jpg" alt="爱,死亡和机器人第四季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0295.html">爱,死亡和机器人第四季</a></h2>
+    <p class="movie-meta">2025 · 剧集 · 科幻,奇幻,动画,恐怖</p>
+    <p class="movie-desc">十八集风格迥异的动画短片,继续探索爱欲、死亡宿命与机器觉醒之间最极致、最疯狂的边界。</p>
+    <div class="tag-row"><span>短片集</span><span>赛博朋克</span><span>克苏鲁</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="团子大家族 第二季" data-region="日本" data-type="动漫" data-year="2023" data-genre="日常/治愈/亲情">
+  <a class="movie-poster" href="./movie-0319.html" aria-label="团子大家族 第二季">
+    <img src="./19.jpg" alt="团子大家族 第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0319.html">团子大家族 第二季</a></h2>
+    <p class="movie-meta">2023 · 动漫 · 日常/治愈/亲情</p>
+    <p class="movie-desc">五年后,当年那群吃团子的孩子长大成人,却因为一家老字号团子店的倒闭危机重聚。</p>
+    <div class="tag-row"><span>番剧续作</span><span>团子</span><span>小镇</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="十条命" data-region="中国大陆" data-type="动画电影" data-year="2024" data-genre="奇幻/家庭">
+  <a class="movie-poster" href="./movie-0342.html" aria-label="十条命">
+    <img src="./42.jpg" alt="十条命" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0342.html">十条命</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 奇幻/家庭</p>
+    <p class="movie-desc">一只骄纵的宠物猫意外获得九次重来的机会,却发现第十条命才是唯一的答案。</p>
+    <div class="tag-row"><span>猫</span><span>轮回</span><span>亲情</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="剑姬神圣谭" data-region="日本" data-type="动画剧集" data-year="2023" data-genre="奇幻/动作">
+  <a class="movie-poster" href="./movie-0353.html" aria-label="剑姬神圣谭">
+    <img src="./53.jpg" alt="剑姬神圣谭" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0353.html">剑姬神圣谭</a></h2>
+    <p class="movie-meta">2023 · 动画剧集 · 奇幻/动作</p>
+    <p class="movie-desc">在众神眷顾的大地,最强女剑士“剑姬”为追寻一把传说中能斩断命运的圣剑,踏上了弑神之路。</p>
+    <div class="tag-row"><span>战斗少女</span><span>剑术</span><span>魔法</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="超级侦探" data-region="美国" data-type="剧集" data-year="2024" data-genre="动画,喜剧,悬疑,儿童">
+  <a class="movie-poster" href="./movie-0371.html" aria-label="超级侦探">
+    <img src="./71.jpg" alt="超级侦探" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0371.html">超级侦探</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 动画,喜剧,悬疑,儿童</p>
+    <p class="movie-desc">一个自诩为“超级侦探”的9岁男孩,用他天马行空的“逻辑”,总能破获校园里的离奇案件,虽然真相往往完全不同。</p>
+    <div class="tag-row"><span>侦探</span><span>搞笑</span><span>小学生</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="饮料杯历险记:植物英雄" data-region="美国" data-type="电影" data-year="2024" data-genre="动画/冒险">
+  <a class="movie-poster" href="./movie-0373.html" aria-label="饮料杯历险记:植物英雄">
+    <img src="./73.jpg" alt="饮料杯历险记:植物英雄" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0373.html">饮料杯历险记:植物英雄</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画/冒险</p>
+    <p class="movie-desc">快餐店里一只被丢弃的饮料杯、一根吸管和一根薯条,踏上拯救被污染植物的冒险。</p>
+    <div class="tag-row"><span>环保</span><span>拟人</span><span>喜剧</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="再战龙武士" data-region="日本" data-type="电影" data-year="2026" data-genre="动画/冒险">
+  <a class="movie-poster" href="./movie-0386.html" aria-label="再战龙武士">
+    <img src="./86.jpg" alt="再战龙武士" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0386.html">再战龙武士</a></h2>
+    <p class="movie-meta">2026 · 电影 · 动画/冒险</p>
+    <p class="movie-desc">30年前的龙武士机甲被封印在神社地下,当年那个小男孩已经成了颓废的中年大叔。</p>
+    <div class="tag-row"><span>机甲</span><span>情怀</span><span>热血</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="矮精灵历险记" data-region="英国" data-type="动画电影" data-year="2018" data-genre="奇幻/冒险">
+  <a class="movie-poster" href="./movie-0387.html" aria-label="矮精灵历险记">
+    <img src="./87.jpg" alt="矮精灵历险记" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0387.html">矮精灵历险记</a></h2>
+    <p class="movie-meta">2018 · 动画电影 · 奇幻/冒险</p>
+    <p class="movie-desc">矮精灵米洛为了拯救被诅咒的森林,必须集齐七颗被恶龙偷走的彩虹石。</p>
+    <div class="tag-row"><span>精灵</span><span>友情</span><span>成长</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="妙先生之火泽睽笑人传" data-region="中国大陆" data-type="电影" data-year="2024" data-genre="动画">
+  <a class="movie-poster" href="./movie-0396.html" aria-label="妙先生之火泽睽笑人传">
+    <img src="./96.jpg" alt="妙先生之火泽睽笑人传" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0396.html">妙先生之火泽睽笑人传</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画</p>
+    <p class="movie-desc">一个只会傻笑的哑巴少年,为了拯救被瘟疫吞噬的村庄,自愿变成一把能斩断因果的剑。</p>
+    <div class="tag-row"><span>奇幻</span><span>武侠</span><span>国风</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="星银岛" data-region="美国" data-type="动画电影" data-year="2025" data-genre="科幻/冒险/家庭">
+  <a class="movie-poster" href="./movie-0399.html" aria-label="星银岛">
+    <img src="./99.jpg" alt="星银岛" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0399.html">星银岛</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 科幻/冒险/家庭</p>
+    <p class="movie-desc">少年吉姆在废弃空间站发现一张星图,指向传说中由“星银”构成的宝藏星球,但招募的船员全是海盗。</p>
+    <div class="tag-row"><span>太空宝藏</span><span>机械海盗</span><span>少年成长</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="蜘蛛侠第二季" data-region="美国" data-type="动画剧集" data-year="1995" data-genre="动作,科幻,冒险">
+  <a class="movie-poster" href="./movie-0488.html" aria-label="蜘蛛侠第二季">
+    <img src="./38.jpg" alt="蜘蛛侠第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0488.html">蜘蛛侠第二季</a></h2>
+    <p class="movie-meta">1995 · 动画剧集 · 动作,科幻,冒险</p>
+    <p class="movie-desc">当平行宇宙的蜘蛛侠们开始离奇消失,我们的彼得·帕克必须找到跨维度猎杀者的真面目。</p>
+    <div class="tag-row"><span>超级英雄</span><span>平行宇宙</span><span>宿敌</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="泰山传奇:森林争霸" data-region="美国" data-type="动画电影" data-year="2020" data-genre="冒险,动作,家庭">
+  <a class="movie-poster" href="./movie-0517.html" aria-label="泰山传奇:森林争霸">
+    <img src="./67.jpg" alt="泰山传奇:森林争霸" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0517.html">泰山传奇:森林争霸</a></h2>
+    <p class="movie-meta">2020 · 动画电影 · 冒险,动作,家庭</p>
+    <p class="movie-desc">泰山继任森林之王,却遇到狮群入侵,他必须在猩猩族群和狮群之间做出残酷选择。</p>
+    <div class="tag-row"><span>泰山</span><span>动物纷争</span><span>森林守护</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="史上最强弟子" data-region="日本" data-type="动画剧集" data-year="2026" data-genre="动作,喜剧,校园">
+  <a class="movie-poster" href="./movie-0539.html" aria-label="史上最强弟子">
+    <img src="./89.jpg" alt="史上最强弟子" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0539.html">史上最强弟子</a></h2>
+    <p class="movie-meta">2026 · 动画剧集 · 动作,喜剧,校园</p>
+    <p class="movie-desc">全校最弱的废柴为了追女神加入空手道社,却发现社长是一只伪装成人类的超级战斗机器人。</p>
+    <div class="tag-row"><span>热血</span><span>武痴</span><span>菜鸟逆袭</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="风中奇缘2:伦敦之旅" data-region="美国" data-type="电影" data-year="2025" data-genre="爱情/历史/动画/冒险">
+  <a class="movie-poster" href="./movie-0540.html" aria-label="风中奇缘2:伦敦之旅">
+    <img src="./90.jpg" alt="风中奇缘2:伦敦之旅" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0540.html">风中奇缘2:伦敦之旅</a></h2>
+    <p class="movie-meta">2025 · 电影 · 爱情/历史/动画/冒险</p>
+    <p class="movie-desc">宝嘉康蒂为了部落和平,远赴伦敦,却发现自己卷入了英王宫廷的阴谋与一场三角恋。</p>
+    <div class="tag-row"><span>迪士尼续集</span><span>公主</span><span>跨文化</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="画江湖之不良人第二季" data-region="中国大陆" data-type="动画" data-year="2016" data-genre="武侠,历史">
+  <a class="movie-poster" href="./movie-0543.html" aria-label="画江湖之不良人第二季">
+    <img src="./93.jpg" alt="画江湖之不良人第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0543.html">画江湖之不良人第二季</a></h2>
+    <p class="movie-meta">2016 · 动画 · 武侠,历史</p>
+    <p class="movie-desc">李星云被迫卷入龙泉宝藏的争夺战,在朱温与李克用的夹缝中,寻找成为“不良帅”或“逍遥闲人”的真正答案。</p>
+    <div class="tag-row"><span>国漫</span><span>玄幻</span><span>权谋</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="猫女:猎捕" data-region="美国" data-type="动画电影" data-year="2024" data-genre="动作超级英雄">
+  <a class="movie-poster" href="./movie-0544.html" aria-label="猫女:猎捕">
+    <img src="./94.jpg" alt="猫女:猎捕" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0544.html">猫女:猎捕</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 动作超级英雄</p>
+    <p class="movie-desc">猫女偷走了一颗所有人都想得到的钻石,却发现里面封印着能毁灭哥谭市的混沌之灵。</p>
+    <div class="tag-row"><span>猫女</span><span>侠盗</span><span>DC动画</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="超能小怪兽:新班级" data-region="美国" data-type="电影" data-year="2026" data-genre="动画,喜剧,奇幻">
+  <a class="movie-poster" href="./movie-0604.html" aria-label="超能小怪兽:新班级">
+    <img src="./4.jpg" alt="超能小怪兽:新班级" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0604.html">超能小怪兽:新班级</a></h2>
+    <p class="movie-meta">2026 · 电影 · 动画,喜剧,奇幻</p>
+    <p class="movie-desc">在怪兽大学里,一只只会让东西变“粉红”的废柴怪兽,必须靠这个最没用能力拯救全校。</p>
+    <div class="tag-row"><span>怪兽</span><span>校园</span><span>超能力</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="快藏起来!玛琪娜同学" data-region="日本" data-type="TV 动画" data-year="2022" data-genre="喜剧,恋爱,校园">
+  <a class="movie-poster" href="./movie-0605.html" aria-label="快藏起来!玛琪娜同学">
+    <img src="./5.jpg" alt="快藏起来!玛琪娜同学" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0605.html">快藏起来!玛琪娜同学</a></h2>
+    <p class="movie-meta">2022 · TV 动画 · 喜剧,恋爱,校园</p>
+    <p class="movie-desc">一个患有极度社恐的女孩只要被发现就会转学,于是全校男生开始了“绝对不能找到她”的恋爱攻防战。</p>
+    <div class="tag-row"><span>社恐</span><span>躲藏</span><span>校园恋爱</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="超级飞侠第五季" data-region="中国大陆" data-type="剧集" data-year="2020" data-genre="儿童动画">
+  <a class="movie-poster" href="./movie-0620.html" aria-label="超级飞侠第五季">
+    <img src="./20.jpg" alt="超级飞侠第五季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0620.html">超级飞侠第五季</a></h2>
+    <p class="movie-meta">2020 · 剧集 · 儿童动画</p>
+    <p class="movie-desc">乐迪和多多的投递任务升级,这次他们要穿越到世界著名童话故事里,修复被反派“故事盗贼”破坏的经典结局。</p>
+    <div class="tag-row"><span>冒险</span><span>教育</span><span>团队合作</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="我!天命大反派" data-region="中国大陆" data-type="动画" data-year="2025" data-genre="玄幻,冒险">
+  <a class="movie-poster" href="./movie-0624.html" aria-label="我!天命大反派">
+    <img src="./24.jpg" alt="我!天命大反派" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0624.html">我!天命大反派</a></h2>
+    <p class="movie-meta">2025 · 动画 · 玄幻,冒险</p>
+    <p class="movie-desc">穿书成注定被主角杀死的炮灰反派,他激活“天命反派系统”,靠“作恶值”升级,誓要干翻所有正道主角。</p>
+    <div class="tag-row"><span>反派主角</span><span>穿越</span><span>系统</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="熊出没重启未来" data-region="中国大陆" data-type="电影" data-year="2026" data-genre="动画,科幻,喜剧">
+  <a class="movie-poster" href="./movie-0628.html" aria-label="熊出没重启未来">
+    <img src="./28.jpg" alt="熊出没重启未来" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0628.html">熊出没重启未来</a></h2>
+    <p class="movie-meta">2026 · 电影 · 动画,科幻,喜剧</p>
+    <p class="movie-desc">光头强和熊大熊二被一股神秘力量送到100年后,发现未来世界被垃圾机器人统治。</p>
+    <div class="tag-row"><span>熊出没</span><span>时间旅行</span><span>环保</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="洛克王国!圣龙骑士" data-region="中国大陆" data-type="电影" data-year="2023" data-genre="动画,奇幻,冒险">
+  <a class="movie-poster" href="./movie-0635.html" aria-label="洛克王国!圣龙骑士">
+    <img src="./35.jpg" alt="洛克王国!圣龙骑士" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0635.html">洛克王国!圣龙骑士</a></h2>
+    <p class="movie-meta">2023 · 电影 · 动画,奇幻,冒险</p>
+    <p class="movie-desc">平凡的魔法小洛克意外继承了圣龙骑士的残破铠甲,他必须在七天内重铸信念,对抗暗黑魔力。</p>
+    <div class="tag-row"><span>洛克王国</span><span>魔法</span><span>圣龙</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="叔比狗巨灵犬大闹科展" data-region="美国" data-type="动画电影" data-year="2024" data-genre="喜剧,悬疑,冒险,动画">
+  <a class="movie-poster" href="./movie-0653.html" aria-label="叔比狗巨灵犬大闹科展">
+    <img src="./53.jpg" alt="叔比狗巨灵犬大闹科展" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0653.html">叔比狗巨灵犬大闹科展</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 喜剧,悬疑,冒险,动画</p>
+    <p class="movie-desc">为了赢得科展大奖,薛奇发明了一台能把想象变成现实的机器,但却意外释放了古代巨灵犬,把整个小镇变成了动画世界。</p>
+    <div class="tag-row"><span>叔比狗</span><span>合家欢</span><span>宠物</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="刺猬小子之天生我刺" data-region="中国大陆" data-type="电影 (动画)" data-year="2024" data-genre="动画,冒险,喜剧">
+  <a class="movie-poster" href="./movie-0658.html" aria-label="刺猬小子之天生我刺">
+    <img src="./58.jpg" alt="刺猬小子之天生我刺" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0658.html">刺猬小子之天生我刺</a></h2>
+    <p class="movie-meta">2024 · 电影 (动画) · 动画,冒险,喜剧</p>
+    <p class="movie-desc">一只浑身是刺的小刺猬为了救朋友,必须混进没有刺的大城市,学会收起锋芒。</p>
+    <div class="tag-row"><span>刺猬</span><span>勇气</span><span>城市</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="神骑魔法大冒险" data-region="美国" data-type="动画电影" data-year="2023" data-genre="奇幻">
+  <a class="movie-poster" href="./movie-0689.html" aria-label="神骑魔法大冒险">
+    <img src="./89.jpg" alt="神骑魔法大冒险" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0689.html">神骑魔法大冒险</a></h2>
+    <p class="movie-meta">2023 · 动画电影 · 奇幻</p>
+    <p class="movie-desc">见习魔法师与他能说话的神奇坐骑,必须在七天内修复破碎的世界之树。</p>
+    <div class="tag-row"><span>魔法</span><span>冒险</span><span>友情</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="蓝眼武士" data-region="日本/美国" data-type="剧集" data-year="2023" data-genre="动作,历史,动画">
+  <a class="movie-poster" href="./movie-0690.html" aria-label="蓝眼武士">
+    <img src="./90.jpg" alt="蓝眼武士" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本/美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0690.html">蓝眼武士</a></h2>
+    <p class="movie-meta">2023 · 剧集 · 动作,历史,动画</p>
+    <p class="movie-desc">江户时代,一个蓝眼睛的混血孤儿立志杀光所有白人父亲,却发现仇人名单上第一个名字是自己的母亲。</p>
+    <div class="tag-row"><span>混血武士</span><span>江户时代</span><span>复仇</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="迷宫标记者" data-region="日本" data-type="动画剧集" data-year="2026" data-genre="科幻,冒险,悬疑">
+  <a class="movie-poster" href="./movie-0706.html" aria-label="迷宫标记者">
+    <img src="./106.jpg" alt="迷宫标记者" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0706.html">迷宫标记者</a></h2>
+    <p class="movie-meta">2026 · 动画剧集 · 科幻,冒险,悬疑</p>
+    <p class="movie-desc">在地表被致命辐射覆盖的未来,人类躲入地下迷宫,而“标记者”的工作就是在迷宫的墙壁上留下正确的生存路线。</p>
+    <div class="tag-row"><span>反乌托邦</span><span>地下城</span><span>机甲</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="宝贝星球" data-region="美国" data-type="电影" data-year="2008" data-genre="动画,科幻,家庭">
+  <a class="movie-poster" href="./movie-0709.html" aria-label="宝贝星球">
+    <img src="./109.jpg" alt="宝贝星球" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0709.html">宝贝星球</a></h2>
+    <p class="movie-meta">2008 · 电影 · 动画,科幻,家庭</p>
+    <p class="movie-desc">宇宙中最凶悍的赏金猎人接到一个新任务:保护一个拥有生命泉水核心的“星球婴儿”,将其送回银河妈妈怀抱。</p>
+    <div class="tag-row"><span>外星人</span><span>萌宠</span><span>环保</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大雄与奇迹之岛" data-region="日本" data-type="剧场版" data-year="2025" data-genre="动画、奇幻、冒险">
+  <a class="movie-poster" href="./movie-0725.html" aria-label="大雄与奇迹之岛">
+    <img src="./125.jpg" alt="大雄与奇迹之岛" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0725.html">大雄与奇迹之岛</a></h2>
+    <p class="movie-meta">2025 · 剧场版 · 动画、奇幻、冒险</p>
+    <p class="movie-desc">大雄在后山捡到一只渡渡鸟,从而发现了隐藏在南太平洋的奇迹之岛。</p>
+    <div class="tag-row"><span>哆啦A梦</span><span>友情</span><span>环保</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="猪猪侠·一只老猪的逆袭" data-region="中国" data-type="动画电影" data-year="2024" data-genre="喜剧/动作/励志">
+  <a class="movie-poster" href="./movie-0748.html" aria-label="猪猪侠·一只老猪的逆袭">
+    <img src="./148.jpg" alt="猪猪侠·一只老猪的逆袭" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0748.html">猪猪侠·一只老猪的逆袭</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 喜剧/动作/励志</p>
+    <p class="movie-desc">退休多年的初代猪猪侠被召回,穿着发福的战衣拯救丧失勇气的下一代。</p>
+    <div class="tag-row"><span>废柴逆袭</span><span>超级英雄</span><span>童趣</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="十六歳战争" data-region="日本" data-type="动画剧集" data-year="2023" data-genre="科幻,青春,战争">
+  <a class="movie-poster" href="./movie-0773.html" aria-label="十六歳战争">
+    <img src="./23.jpg" alt="十六歳战争" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0773.html">十六歳战争</a></h2>
+    <p class="movie-meta">2023 · 动画剧集 · 科幻,青春,战争</p>
+    <p class="movie-desc">当十六岁成为判刑的年纪,一群少女被送往前线,去打赢一场根本不存在敌人的战争。</p>
+    <div class="tag-row"><span>反乌托邦</span><span>少女与机甲</span><span>集体主义</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="电影版 声之形" data-region="日本" data-type="电影" data-year="2016" data-genre="动画,剧情">
+  <a class="movie-poster" href="./movie-0778.html" aria-label="电影版 声之形">
+    <img src="./28.jpg" alt="电影版 声之形" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0778.html">电影版 声之形</a></h2>
+    <p class="movie-meta">2016 · 电影 · 动画,剧情</p>
+    <p class="movie-desc">曾霸凌聋哑女孩的少年,在多年后用手语说出“我想和你做朋友”,却发现对方已经准备自杀。</p>
+    <div class="tag-row"><span>校园</span><span>霸凌</span><span>听觉障碍</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="画江湖之天罡" data-region="中国大陆" data-type="剧集" data-year="2024" data-genre="动画,武侠,奇幻">
+  <a class="movie-poster" href="./movie-0801.html" aria-label="画江湖之天罡">
+    <img src="./51.jpg" alt="画江湖之天罡" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0801.html">画江湖之天罡</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 动画,武侠,奇幻</p>
+    <p class="movie-desc">大帅袁天罡遗留的最后一颗不死药,在五十年后引发了一场颠覆朝堂与江湖的血雨腥风。</p>
+    <div class="tag-row"><span>不良人</span><span>江湖</span><span>宿命</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="老夫子2001" data-region="中国香港" data-type="电影" data-year="2001" data-genre="喜剧/动画/真人">
+  <a class="movie-poster" href="./movie-0866.html" aria-label="老夫子2001">
+    <img src="./116.jpg" alt="老夫子2001" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国香港</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0866.html">老夫子2001</a></h2>
+    <p class="movie-meta">2001 · 电影 · 喜剧/动画/真人</p>
+    <p class="movie-desc">老夫子与大番薯意外被解雇,却因捡到一张中奖彩票而被卷入一场疯狂的富豪追杀令。</p>
+    <div class="tag-row"><span>漫画改编</span><span>谢霆锋</span><span>张柏芝</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="我们没有羽翼" data-region="日本" data-type="动画剧集" data-year="2025" data-genre="奇幻/青春">
+  <a class="movie-poster" href="./movie-0867.html" aria-label="我们没有羽翼">
+    <img src="./117.jpg" alt="我们没有羽翼" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0867.html">我们没有羽翼</a></h2>
+    <p class="movie-meta">2025 · 动画剧集 · 奇幻/青春</p>
+    <p class="movie-desc">在一个人们出生就失去双翼的世界里,几个高中生试图用“梦想”制造出能飞的翅膀。</p>
+    <div class="tag-row"><span>校园</span><span>超能力</span><span>治愈</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="三者三叶" data-region="日本" data-type="动画剧集" data-year="2024" data-genre="动画,青春,奇幻">
+  <a class="movie-poster" href="./movie-0912.html" aria-label="三者三叶">
+    <img src="./12.jpg" alt="三者三叶" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0912.html">三者三叶</a></h2>
+    <p class="movie-meta">2024 · 动画剧集 · 动画,青春,奇幻</p>
+    <p class="movie-desc">性格迥异的三胞胎姐妹因一场流星雨获得了“触感共享”的超能力,从此她们的青春恋爱变得混乱又甜蜜。</p>
+    <div class="tag-row"><span>校园</span><span>三胞胎</span><span>灵魂互换</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="恐龙城历险" data-region="美国" data-type="动画电影" data-year="2026" data-genre="冒险,科幻">
+  <a class="movie-poster" href="./movie-0916.html" aria-label="恐龙城历险">
+    <img src="./16.jpg" alt="恐龙城历险" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0916.html">恐龙城历险</a></h2>
+    <p class="movie-meta">2026 · 动画电影 · 冒险,科幻</p>
+    <p class="movie-desc">三个参加科学展被嘲笑的小孩,掉进地底裂缝,发现一个由恐龙驾驶机甲统治的未来城市。</p>
+    <div class="tag-row"><span>恐龙</span><span>平行世界</span><span>机甲</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="冰河世纪:巨蛋恶作剧" data-region="美国" data-type="电影" data-year="2024" data-genre="动画,喜剧,冒险">
+  <a class="movie-poster" href="./movie-0944.html" aria-label="冰河世纪:巨蛋恶作剧">
+    <img src="./44.jpg" alt="冰河世纪:巨蛋恶作剧" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0944.html">冰河世纪:巨蛋恶作剧</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画,喜剧,冒险</p>
+    <p class="movie-desc">剑齿鼠斯克莱特发现一枚比地球还大的巨蛋,当他试图藏起来时,不小心把蛋滚出了太阳系。</p>
+    <div class="tag-row"><span>史前</span><span>搞笑</span><span>合家欢</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="蜡笔小新第七季" data-region="日本" data-type="剧集" data-year="2024" data-genre="喜剧/动画">
+  <a class="movie-poster" href="./movie-0952.html" aria-label="蜡笔小新第七季">
+    <img src="./52.jpg" alt="蜡笔小新第七季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0952.html">蜡笔小新第七季</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 喜剧/动画</p>
+    <p class="movie-desc">春日部防卫队本季遭遇最强“敌人”——一位比小新还无厘头的新转学生,以及野原家的神秘存折失踪案。</p>
+    <div class="tag-row"><span>日常</span><span>恶搞</span><span>温情</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="安德鲁和威利冒险记" data-region="日本" data-type="动画短片" data-year="1984" data-genre="动画/冒险/家庭">
+  <a class="movie-poster" href="./movie-0953.html" aria-label="安德鲁和威利冒险记">
+    <img src="./53.jpg" alt="安德鲁和威利冒险记" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0953.html">安德鲁和威利冒险记</a></h2>
+    <p class="movie-meta">1984 · 动画短片 · 动画/冒险/家庭</p>
+    <p class="movie-desc">两个小男孩为了给生病的母亲寻找神奇药水,穿越了会说话的森林和巨大的蘑菇王国。</p>
+    <div class="tag-row"><span>宫崎骏早期</span><span>手绘</span><span>童真</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="梦境城猎人第一季" data-region="美国" data-type="剧集" data-year="2022" data-genre="动画,奇幻,冒险">
+  <a class="movie-poster" href="./movie-0974.html" aria-label="梦境城猎人第一季">
+    <img src="./74.jpg" alt="梦境城猎人第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0974.html">梦境城猎人第一季</a></h2>
+    <p class="movie-meta">2022 · 剧集 · 动画,奇幻,冒险</p>
+    <p class="movie-desc">一群能自由穿梭他人梦境的少年猎人,发现所有人的噩梦都指向同一座被污染的梦境城。</p>
+    <div class="tag-row"><span>梦境</span><span>打怪</span><span>青少年</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="菲力兹九命猫" data-region="法国" data-type="电影" data-year="2025" data-genre="动画奇幻">
+  <a class="movie-poster" href="./movie-0979.html" aria-label="菲力兹九命猫">
+    <img src="./79.jpg" alt="菲力兹九命猫" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">法国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0979.html">菲力兹九命猫</a></h2>
+    <p class="movie-meta">2025 · 电影 · 动画奇幻</p>
+    <p class="movie-desc">一只叫做菲力兹的黑猫拥有九条命,但每次死而复生都会忘记一段重要的记忆,它必须在死完第九次之前找回真相。</p>
+    <div class="tag-row"><span>猫</span><span>冒险</span><span>治愈</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="顺其自然的日子" data-region="日本" data-type="动画电影" data-year="2020" data-genre="爱情,剧情,治愈">
+  <a class="movie-poster" href="./movie-0997.html" aria-label="顺其自然的日子">
+    <img src="./97.jpg" alt="顺其自然的日子" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0997.html">顺其自然的日子</a></h2>
+    <p class="movie-meta">2020 · 动画电影 · 爱情,剧情,治愈</p>
+    <p class="movie-desc">三段关于“喜欢”的小故事,讲述青春期女生之间、师生之间、以及成年男女之间最自然的情感发生。</p>
+    <div class="tag-row"><span>同性</span><span>青春</span><span>日常</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="驯龙高手番外篇:龙的礼物" data-region="美国" data-type="电影" data-year="2023" data-genre="动画,冒险">
+  <a class="movie-poster" href="./movie-1017.html" aria-label="驯龙高手番外篇:龙的礼物">
+    <img src="./117.jpg" alt="驯龙高手番外篇:龙的礼物" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1017.html">驯龙高手番外篇:龙的礼物</a></h2>
+    <p class="movie-meta">2023 · 电影 · 动画,冒险</p>
+    <p class="movie-desc">嗝嗝为了给没牙仔准备圣诞礼物,不慎激活了维京传说中的致命雪怪。</p>
+    <div class="tag-row"><span>奇幻</span><span>友谊</span><span>圣诞</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="玩具总动员之惊魂夜" data-region="美国" data-type="剧集/动画特别篇" data-year="2024" data-genre="动画/悬疑/喜剧">
+  <a class="movie-poster" href="./movie-1041.html" aria-label="玩具总动员之惊魂夜">
+    <img src="./141.jpg" alt="玩具总动员之惊魂夜" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1041.html">玩具总动员之惊魂夜</a></h2>
+    <p class="movie-meta">2024 · 剧集/动画特别篇 · 动画/悬疑/喜剧</p>
+    <p class="movie-desc">胡迪和巴斯光年受邀参加一座玩具博物馆的开馆之夜,却发现每十分钟就有一件玩具“被消失”。</p>
+    <div class="tag-row"><span>玩具</span><span>密室</span><span>谋杀案</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="即便明天世界终结" data-region="日本" data-type="动画电影" data-year="2024" data-genre="科幻,爱情,灾难">
+  <a class="movie-poster" href="./movie-1051.html" aria-label="即便明天世界终结">
+    <img src="./1.jpg" alt="即便明天世界终结" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1051.html">即便明天世界终结</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 科幻,爱情,灾难</p>
+    <p class="movie-desc">距离小行星撞地球只剩24小时,一对分手的情侣在废墟中跑完最后一场恋爱长跑。</p>
+    <div class="tag-row"><span>世界末日</span><span>青春</span><span>物哀</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="冒险兄弟第一季" data-region="美国" data-type="剧集" data-year="2024" data-genre="动画,喜剧,动作">
+  <a class="movie-poster" href="./movie-1079.html" aria-label="冒险兄弟第一季">
+    <img src="./29.jpg" alt="冒险兄弟第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1079.html">冒险兄弟第一季</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 动画,喜剧,动作</p>
+    <p class="movie-desc">一对性格迥异的兄弟在阿拉斯加荒野中争夺神秘遗产,却意外卷入国际阴谋。</p>
+    <div class="tag-row"><span>兄弟情</span><span>荒野</span><span>搞笑</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="放学后的昴星团" data-region="日本" data-type="TV动画" data-year="2023" data-genre="科幻,青春,冒险">
+  <a class="movie-poster" href="./movie-1115.html" aria-label="放学后的昴星团">
+    <img src="./65.jpg" alt="放学后的昴星团" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1115.html">放学后的昴星团</a></h2>
+    <p class="movie-meta">2023 · TV动画 · 科幻,青春,冒险</p>
+    <p class="movie-desc">天文社四位少女意外启动外星飞船,发现放学后的星空竟是一张通往不同时间线的星图。</p>
+    <div class="tag-row"><span>天文社</span><span>外星科技</span><span>少女群像</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大雄的日本诞生" data-region="日本" data-type="动画电影" data-year="1989" data-genre="科幻,冒险">
+  <a class="movie-poster" href="./movie-1137.html" aria-label="大雄的日本诞生">
+    <img src="./87.jpg" alt="大雄的日本诞生" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1137.html">大雄的日本诞生</a></h2>
+    <p class="movie-meta">1989 · 动画电影 · 科幻,冒险</p>
+    <p class="movie-desc">大雄和朋友们决定离家出走,穿越到史前日本,成为七个原始部落的创始人。</p>
+    <div class="tag-row"><span>时光旅行</span><span>原始时代</span><span>哆啦A梦</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="新·驯龙高手" data-region="美国" data-type="动画电影" data-year="2026" data-genre="奇幻,冒险,动作">
+  <a class="movie-poster" href="./movie-1144.html" aria-label="新·驯龙高手">
+    <img src="./94.jpg" alt="新·驯龙高手" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1144.html">新·驯龙高手</a></h2>
+    <p class="movie-meta">2026 · 动画电影 · 奇幻,冒险,动作</p>
+    <p class="movie-desc">这一次,小嗝嗝发现龙的秘密不止一种,维京人的地下还沉睡着一头引发过史前大灭绝的“造物主之龙”。</p>
+    <div class="tag-row"><span>重启</span><span>维京</span><span>史诗</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="黑神" data-region="日本" data-type="动画" data-year="2025" data-genre="奇幻、战斗、暗黑">
+  <a class="movie-poster" href="./movie-1151.html" aria-label="黑神">
+    <img src="./101.jpg" alt="黑神" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1151.html">黑神</a></h2>
+    <p class="movie-meta">2025 · 动画 · 奇幻、战斗、暗黑</p>
+    <p class="movie-desc">在神明靠人类信仰生存的世界,最弱的“霉神”为自救,决定干掉所有神明自己当老大。</p>
+    <div class="tag-row"><span>神明厮杀</span><span>反套路热血</span><span>暴力美学</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="墓王之王" data-region="中国大陆" data-type="网络动画" data-year="2021" data-genre="古风/武侠/悬疑">
+  <a class="movie-poster" href="./movie-1183.html" aria-label="墓王之王">
+    <img src="./133.jpg" alt="墓王之王" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1183.html">墓王之王</a></h2>
+    <p class="movie-meta">2021 · 网络动画 · 古风/武侠/悬疑</p>
+    <p class="movie-desc">为了破解“锁龙脉”的秘密,攻墓人不得不深入那座据说埋葬着历代墓王的禁地。</p>
+    <div class="tag-row"><span>攻墓</span><span>盗墓</span><span>机关术</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="音乐少女" data-region="日本" data-type="动画剧集" data-year="2024" data-genre="音乐,校园,百合">
+  <a class="movie-poster" href="./movie-1193.html" aria-label="音乐少女">
+    <img src="./143.jpg" alt="音乐少女" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1193.html">音乐少女</a></h2>
+    <p class="movie-meta">2024 · 动画剧集 · 音乐,校园,百合</p>
+    <p class="movie-desc">患有重度社交恐惧的天才钢琴少女,被迫加入濒临废部的管弦乐社团,只能用琴声与人类交谈。</p>
+    <div class="tag-row"><span>管弦乐</span><span>自闭症</span><span>救赎</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="排球少年第二季" data-region="日本" data-type="动画剧集" data-year="2025" data-genre="运动/热血/校园">
+  <a class="movie-poster" href="./movie-1205.html" aria-label="排球少年第二季">
+    <img src="./5.jpg" alt="排球少年第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1205.html">排球少年第二季</a></h2>
+    <p class="movie-meta">2025 · 动画剧集 · 运动/热血/校园</p>
+    <p class="movie-desc">乌野高校闯入全国大赛,首战就遇到号称“铁壁”的全国三连冠队伍。</p>
+    <div class="tag-row"><span>排球</span><span>团队成长</span><span>全国大赛</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大雄与翼之勇者" data-region="日本" data-type="动画电影" data-year="2024" data-genre="冒险、奇幻、友情">
+  <a class="movie-poster" href="./movie-1228.html" aria-label="大雄与翼之勇者">
+    <img src="./28.jpg" alt="大雄与翼之勇者" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1228.html">大雄与翼之勇者</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 冒险、奇幻、友情</p>
+    <p class="movie-desc">大雄意外获得一对翅膀,却被卷入鸟类王国的王位争夺战。</p>
+    <div class="tag-row"><span>哆啦A梦</span><span>平行世界</span><span>鸟人传说</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="败犬女主太多了!" data-region="日本" data-type="动画剧集" data-year="2024" data-genre="喜剧/爱情/校园">
+  <a class="movie-poster" href="./movie-1240.html" aria-label="败犬女主太多了!">
+    <img src="./40.jpg" alt="败犬女主太多了!" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1240.html">败犬女主太多了!</a></h2>
+    <p class="movie-meta">2024 · 动画剧集 · 喜剧/爱情/校园</p>
+    <p class="movie-desc">路人男主被安排去清理学校储物室,却发现这里是历届“败犬”女主们的秘密茶话会,他成了她们唯一的“战败史官”。</p>
+    <div class="tag-row"><span>败犬</span><span>旁观者视角</span><span>党争</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="珍爱地球大冒险第三季" data-region="英国" data-type="剧集,动画" data-year="2023" data-genre="冒险,家庭,环保">
+  <a class="movie-poster" href="./movie-1244.html" aria-label="珍爱地球大冒险第三季">
+    <img src="./44.jpg" alt="珍爱地球大冒险第三季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1244.html">珍爱地球大冒险第三季</a></h2>
+    <p class="movie-meta">2023 · 剧集,动画 · 冒险,家庭,环保</p>
+    <p class="movie-desc">三个动物保护小分队搭乘环保飞船“绿叶号”,穿越七大洲,解决人类活动引发的生态危机。</p>
+    <div class="tag-row"><span>科普</span><span>全球旅行</span><span>萌系动物</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="老小阿凡提" data-region="中国大陆" data-type="剧集" data-year="2025" data-genre="动画、喜剧、历史">
+  <a class="movie-poster" href="./movie-1261.html" aria-label="老小阿凡提">
+    <img src="./61.jpg" alt="老小阿凡提" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1261.html">老小阿凡提</a></h2>
+    <p class="movie-meta">2025 · 剧集 · 动画、喜剧、历史</p>
+    <p class="movie-desc">老年阿凡提喝下了一口神奇的泉水变回了七八岁的小孩,他要用小孩的身体去教训贪财的巴依老爷。</p>
+    <div class="tag-row"><span>阿凡提</span><span>返老还童</span><span>智慧</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="阿茹茉妮" data-region="法国/日本" data-type="动画短片" data-year="2023" data-genre="奇幻,爱情,音乐">
+  <a class="movie-poster" href="./movie-1273.html" aria-label="阿茹茉妮">
+    <img src="./73.jpg" alt="阿茹茉妮" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">法国/日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1273.html">阿茹茉妮</a></h2>
+    <p class="movie-meta">2023 · 动画短片 · 奇幻,爱情,音乐</p>
+    <p class="movie-desc">巴黎地铁里,一个卖艺女孩的竖琴声能让听见的人看到爱人眼里的颜色。</p>
+    <div class="tag-row"><span>法语香颂</span><span>手绘</span><span>都市奇谭</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="魔物娘的医生" data-region="日本" data-type="动画剧集" data-year="2020" data-genre="奇幻/恋爱/喜剧">
+  <a class="movie-poster" href="./movie-1275.html" aria-label="魔物娘的医生">
+    <img src="./75.jpg" alt="魔物娘的医生" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1275.html">魔物娘的医生</a></h2>
+    <p class="movie-meta">2020 · 动画剧集 · 奇幻/恋爱/喜剧</p>
+    <p class="movie-desc">在人类与亚人种共存的都市里,一名专治魔物娘的人类医生,用医术而非武力赢得她们的信任。</p>
+    <div class="tag-row"><span>魔物娘</span><span>医疗</span><span>后宫</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="城市猎人天使之泪" data-region="日本" data-type="动画电影" data-year="2025" data-genre="动作,喜剧">
+  <a class="movie-poster" href="./movie-1307.html" aria-label="城市猎人天使之泪">
+    <img src="./107.jpg" alt="城市猎人天使之泪" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1307.html">城市猎人天使之泪</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 动作,喜剧</p>
+    <p class="movie-desc">冴羽獠接到最后一个委托:找到一颗名为“天使之泪”的宝石,委托人是他已故搭档槙村秀幸的女儿。</p>
+    <div class="tag-row"><span>经典</span><span>回归</span><span>杀手</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="神龙星主" data-region="中国大陆" data-type="动画剧集" data-year="2025" data-genre="玄幻修仙">
+  <a class="movie-poster" href="./movie-1363.html" aria-label="神龙星主">
+    <img src="./13.jpg" alt="神龙星主" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1363.html">神龙星主</a></h2>
+    <p class="movie-meta">2025 · 动画剧集 · 玄幻修仙</p>
+    <p class="movie-desc">一个被挖去龙丹的龙族少年,在人类修仙学院里靠“科学炼丹法”逆天改命。</p>
+    <div class="tag-row"><span>穿越</span><span>废柴逆袭</span><span>龙族</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="破刃之剑" data-region="日本" data-type="动画电影" data-year="2024" data-genre="机甲战争">
+  <a class="movie-poster" href="./movie-1366.html" aria-label="破刃之剑">
+    <img src="./16.jpg" alt="破刃之剑" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1366.html">破刃之剑</a></h2>
+    <p class="movie-meta">2024 · 动画电影 · 机甲战争</p>
+    <p class="movie-desc">在一个无法使用热兵器的世界,唯一能驾驶古代机甲的他,却是个和平主义者。</p>
+    <div class="tag-row"><span>冷兵器机甲</span><span>政治阴谋</span><span>无力感男主</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="南方公园:新冠之后" data-region="美国" data-type="动画特辑" data-year="2023" data-genre="喜剧,科幻,讽刺">
+  <a class="movie-poster" href="./movie-1408.html" aria-label="南方公园:新冠之后">
+    <img src="./58.jpg" alt="南方公园:新冠之后" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1408.html">南方公园:新冠之后</a></h2>
+    <p class="movie-meta">2023 · 动画特辑 · 喜剧,科幻,讽刺</p>
+    <p class="movie-desc">后疫情时代的南方公园,凯尔为了拯救沉迷疫苗阴谋论的斯坦,发明了时间机器回到2020年。</p>
+    <div class="tag-row"><span>疫情</span><span>时间穿越</span><span>成人向</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="米奇欢乐多第二季" data-region="美国" data-type="动画剧集" data-year="2024" data-genre="喜剧/动画/短片">
+  <a class="movie-poster" href="./movie-1412.html" aria-label="米奇欢乐多第二季">
+    <img src="./62.jpg" alt="米奇欢乐多第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1412.html">米奇欢乐多第二季</a></h2>
+    <p class="movie-meta">2024 · 动画剧集 · 喜剧/动画/短片</p>
+    <p class="movie-desc">米奇和他的老朋友们在现代都市里继续他们的搞笑日常,这次连互联网梗和元宇宙都不放过。</p>
+    <div class="tag-row"><span>经典重启</span><span>无厘头</span><span>合家欢</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="穿靴子的猫:萌猫三剑客" data-region="美国" data-type="电影" data-year="2024" data-genre="动画、喜剧、冒险">
+  <a class="movie-poster" href="./movie-1414.html" aria-label="穿靴子的猫:萌猫三剑客">
+    <img src="./64.jpg" alt="穿靴子的猫:萌猫三剑客" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1414.html">穿靴子的猫:萌猫三剑客</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画、喜剧、冒险</p>
+    <p class="movie-desc">穿靴子的猫在一次冒险中意外分裂成三个自己,分别代表他的勇敢、狡黠和懒惰,必须三猫合力才能阻止女巫偷走全世界猫的九条命。</p>
+    <div class="tag-row"><span>猫</span><span>剑客</span><span>友情</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="星武神诀 动态漫" data-region="中国大陆" data-type="剧集" data-year="2024" data-genre="动画,奇幻,战斗">
+  <a class="movie-poster" href="./movie-1438.html" aria-label="星武神诀 动态漫">
+    <img src="./88.jpg" alt="星武神诀 动态漫" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1438.html">星武神诀 动态漫</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 动画,奇幻,战斗</p>
+    <p class="movie-desc">平凡少年意外获得上古星武传承,在充满星辰之力的异世界,踏上了一条颠覆三界的强者之路。</p>
+    <div class="tag-row"><span>动态漫画</span><span>玄幻</span><span>修炼</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="雪人往事" data-region="美国" data-type="电影" data-year="2013" data-genre="动画,短片,奇幻,家庭">
+  <a class="movie-poster" href="./movie-1446.html" aria-label="雪人往事">
+    <img src="./96.jpg" alt="雪人往事" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1446.html">雪人往事</a></h2>
+    <p class="movie-meta">2013 · 电影 · 动画,短片,奇幻,家庭</p>
+    <p class="movie-desc">经典的雪人朋友再次归来,带主人回顾那些被大雪覆盖的童年往事。</p>
+    <div class="tag-row"><span>雪人</span><span>圣诞</span><span>回忆杀</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="万妖国" data-region="中国大陆" data-type="动画电影" data-year="2026" data-genre="奇幻/冒险/喜剧">
+  <a class="movie-poster" href="./movie-1451.html" aria-label="万妖国">
+    <img src="./101.jpg" alt="万妖国" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1451.html">万妖国</a></h2>
+    <p class="movie-meta">2026 · 动画电影 · 奇幻/冒险/喜剧</p>
+    <p class="movie-desc">为逃避政治联姻,万妖国叛逆公主联手废柴人类书生,办起了“妖怪再就业培训班”。</p>
+    <div class="tag-row"><span>妖怪</span><span>公主</span><span>政治联姻</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="怪诞小镇第二季" data-region="美国" data-type="动画" data-year="2025" data-genre="喜剧/悬疑/奇幻">
+  <a class="movie-poster" href="./movie-1463.html" aria-label="怪诞小镇第二季">
+    <img src="./113.jpg" alt="怪诞小镇第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1463.html">怪诞小镇第二季</a></h2>
+    <p class="movie-meta">2025 · 动画 · 喜剧/悬疑/奇幻</p>
+    <p class="movie-desc">双胞胎姐弟暑假回到怪诞小镇,发现这里每个居民都有一个不可告人的超自然秘密。</p>
+    <div class="tag-row"><span>冒险</span><span>解谜</span><span>双胞胎</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="老鼠开会" data-region="英国" data-type="电影" data-year="2023" data-genre="动画/黑色幽默">
+  <a class="movie-poster" href="./movie-1468.html" aria-label="老鼠开会">
+    <img src="./118.jpg" alt="老鼠开会" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1468.html">老鼠开会</a></h2>
+    <p class="movie-meta">2023 · 电影 · 动画/黑色幽默</p>
+    <p class="movie-desc">老鼠们开会决定给猫挂铃铛,却没有一只老鼠愿意承担这个送死任务。</p>
+    <div class="tag-row"><span>寓言</span><span>讽刺</span><span>集体决策</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大河之舞:动画大冒险" data-region="爱尔兰/英国" data-type="动画电影" data-year="2025" data-genre="奇幻/音乐/冒险">
+  <a class="movie-poster" href="./movie-1479.html" aria-label="大河之舞:动画大冒险">
+    <img src="./129.jpg" alt="大河之舞:动画大冒险" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">爱尔兰/英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1479.html">大河之舞:动画大冒险</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 奇幻/音乐/冒险</p>
+    <p class="movie-desc">一只热爱踢踏舞的小狐狸为了拯救干涸的大河,必须穿越神秘森林学会“让大地震动”的舞步。</p>
+    <div class="tag-row"><span>踢踏舞</span><span>凯尔特神话</span><span>音乐剧改编</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="金钻鼠王" data-region="西班牙" data-type="电影" data-year="2006" data-genre="动画/家庭/喜剧">
+  <a class="movie-poster" href="./movie-1496.html" aria-label="金钻鼠王">
+    <img src="./146.jpg" alt="金钻鼠王" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">西班牙</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1496.html">金钻鼠王</a></h2>
+    <p class="movie-meta">2006 · 电影 · 动画/家庭/喜剧</p>
+    <p class="movie-desc">一只渴望成为牙仙的小老鼠,意外掉进了一个专门收藏乳牙的邪恶城堡里。</p>
+    <div class="tag-row"><span>鼠</span><span>牙仙</span><span>童真</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="赛尔号第七季之宇宙之眼" data-region="中国大陆" data-type="动画剧集" data-year="2019" data-genre="科幻、冒险、儿童">
+  <a class="movie-poster" href="./movie-1505.html" aria-label="赛尔号第七季之宇宙之眼">
+    <img src="./5.jpg" alt="赛尔号第七季之宇宙之眼" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1505.html">赛尔号第七季之宇宙之眼</a></h2>
+    <p class="movie-meta">2019 · 动画剧集 · 科幻、冒险、儿童</p>
+    <p class="movie-desc">赛尔先锋小队误入“瞳孔星系”,这里每颗星球都是一个巨大生物的细胞,而宇宙之眼正在被唤醒。</p>
+    <div class="tag-row"><span>赛尔号</span><span>机器人</span><span>星际</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="青之驱魔师" data-region="日本" data-type="TV 动画" data-year="2011" data-genre="动作,奇幻,神魔">
+  <a class="movie-poster" href="./movie-1508.html" aria-label="青之驱魔师">
+    <img src="./8.jpg" alt="青之驱魔师" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1508.html">青之驱魔师</a></h2>
+    <p class="movie-meta">2011 · TV 动画 · 动作,奇幻,神魔</p>
+    <p class="movie-desc">撒旦的私生子立志成为最强驱魔师,他要亲手打败恶魔父亲,保护人类世界。</p>
+    <div class="tag-row"><span>兄弟</span><span>撒旦</span><span>驱魔</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="阿凡提的故事" data-region="中国大陆" data-type="电影" data-year="2024" data-genre="动画喜剧">
+  <a class="movie-poster" href="./movie-1516.html" aria-label="阿凡提的故事">
+    <img src="./16.jpg" alt="阿凡提的故事" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1516.html">阿凡提的故事</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画喜剧</p>
+    <p class="movie-desc">当阿凡提的智慧遇到数字时代,他要用一头驴和一把都塔尔,挑战操控股市的大巴依。</p>
+    <div class="tag-row"><span>智慧</span><span>合家欢</span><span>西域</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大雄的绘世界物语" data-region="日本" data-type="动画电影" data-year="2025" data-genre="奇幻,冒险,治愈">
+  <a class="movie-poster" href="./movie-1528.html" aria-label="大雄的绘世界物语">
+    <img src="./28.jpg" alt="大雄的绘世界物语" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1528.html">大雄的绘世界物语</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 奇幻,冒险,治愈</p>
+    <p class="movie-desc">大雄捡到一支能把画变成现实的笔,但他画出的世界正在吞噬现实中的静香。</p>
+    <div class="tag-row"><span>哆啦A梦</span><span>绘画</span><span>平行世界</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="我跟踪猫" data-region="日本" data-type="动画电影" data-year="2025" data-genre="奇幻/治愈/都市">
+  <a class="movie-poster" href="./movie-1529.html" aria-label="我跟踪猫">
+    <img src="./29.jpg" alt="我跟踪猫" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1529.html">我跟踪猫</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 奇幻/治愈/都市</p>
+    <p class="movie-desc">一个社恐程序员跟踪一只流浪猫,意外发现了在城市缝隙中藏匿的“猫的平行时空”。</p>
+    <div class="tag-row"><span>猫奴</span><span>都市传说</span><span>时空错位</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="异兽魔都" data-region="日本" data-type="动画" data-year="2020" data-genre="奇幻,动作,黑色幽默">
+  <a class="movie-poster" href="./movie-1532.html" aria-label="异兽魔都">
+    <img src="./32.jpg" alt="异兽魔都" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1532.html">异兽魔都</a></h2>
+    <p class="movie-meta">2020 · 动画 · 奇幻,动作,黑色幽默</p>
+    <p class="movie-desc">在魔法师把人类当实验品的世界里,一个蜥蜴头男人天天追杀魔法师,只为找回自己的脸和记忆。</p>
+    <div class="tag-row"><span>魔法师</span><span>蜥蜴头</span><span>暴力美学</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="丁丁和太阳神庙" data-region="法国" data-type="电影" data-year="2025" data-genre="动画,冒险">
+  <a class="movie-poster" href="./movie-1534.html" aria-label="丁丁和太阳神庙">
+    <img src="./34.jpg" alt="丁丁和太阳神庙" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">法国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1534.html">丁丁和太阳神庙</a></h2>
+    <p class="movie-meta">2025 · 电影 · 动画,冒险</p>
+    <p class="movie-desc">丁丁发现太阳神庙其实是上古外星文明的信号发射器,而日食即将引爆它。</p>
+    <div class="tag-row"><span>解密</span><span>古文明</span><span>搭档</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="玛雅蜜蜂大冒险" data-region="德国/澳大利亚" data-type="动画电影" data-year="2025" data-genre="动画/冒险/家庭">
+  <a class="movie-poster" href="./movie-1547.html" aria-label="玛雅蜜蜂大冒险">
+    <img src="./47.jpg" alt="玛雅蜜蜂大冒险" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">德国/澳大利亚</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1547.html">玛雅蜜蜂大冒险</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 动画/冒险/家庭</p>
+    <p class="movie-desc">一只好奇心过剩的幼蜂,为了拯救整个蜂巢独自闯入台风眼。</p>
+    <div class="tag-row"><span>蜜蜂</span><span>环保</span><span>友谊</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="工作细胞:细胞大作战" data-region="日本" data-type="电影" data-year="2025" data-genre="动画/科普/动作">
+  <a class="movie-poster" href="./movie-1562.html" aria-label="工作细胞:细胞大作战">
+    <img src="./62.jpg" alt="工作细胞:细胞大作战" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1562.html">工作细胞:细胞大作战</a></h2>
+    <p class="movie-meta">2025 · 电影 · 动画/科普/动作</p>
+    <p class="movie-desc">当致命的未知病毒入侵人体,一向懦弱的普通细胞被激活了远古战斗基因,他将成为决定宿主生死的关键武器。</p>
+    <div class="tag-row"><span>拟人化</span><span>免疫系统</span><span>热血战斗</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="尖叫旅社3" data-region="美国" data-type="电影" data-year="2018" data-genre="动画,喜剧,奇幻">
+  <a class="movie-poster" href="./movie-1566.html" aria-label="尖叫旅社3">
+    <img src="./66.jpg" alt="尖叫旅社3" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1566.html">尖叫旅社3</a></h2>
+    <p class="movie-meta">2018 · 电影 · 动画,喜剧,奇幻</p>
+    <p class="movie-desc">吸血鬼德古拉带着怪兽家族登上豪华邮轮,却对船长埃丽卡一见钟情,而埃丽卡其实奉命要炸掉这艘船。</p>
+    <div class="tag-row"><span>怪兽</span><span>度假</span><span>合家欢</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="高飞电影" data-region="美国" data-type="电影" data-year="2024" data-genre="动画/冒险">
+  <a class="movie-poster" href="./movie-1567.html" aria-label="高飞电影">
+    <img src="./67.jpg" alt="高飞电影" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1567.html">高飞电影</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画/冒险</p>
+    <p class="movie-desc">一只恐高的信天翁儿子,必须带领一群候鸟穿越台风,拯救被油污毁掉的南方湿地。</p>
+    <div class="tag-row"><span>鸟类</span><span>父子飞行</span><span>环保</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="希尔达与山怪王" data-region="北欧/英国" data-type="动画剧集" data-year="2022" data-genre="动画/奇幻/冒险">
+  <a class="movie-poster" href="./movie-1571.html" aria-label="希尔达与山怪王">
+    <img src="./71.jpg" alt="希尔达与山怪王" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">北欧/英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1571.html">希尔达与山怪王</a></h2>
+    <p class="movie-meta">2022 · 动画剧集 · 动画/奇幻/冒险</p>
+    <p class="movie-desc">蓝发女孩希尔达闯入了山怪王的梦境,发现所谓的“邪恶山怪”其实在守护一本写满谎言的人类史书。</p>
+    <div class="tag-row"><span>奇幻</span><span>治愈</span><span>成长</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="男子高中生的日常" data-region="日本" data-type="动漫" data-year="2025" data-genre="喜剧/校园/青春">
+  <a class="movie-poster" href="./movie-1584.html" aria-label="男子高中生的日常">
+    <img src="./84.jpg" alt="男子高中生的日常" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1584.html">男子高中生的日常</a></h2>
+    <p class="movie-meta">2025 · 动漫 · 喜剧/校园/青春</p>
+    <p class="movie-desc">在女生稀缺的某个乡下男子高中,一群无聊的高中生为了“引起注意”,上演了一出出令人捧腹的沙雕日常。</p>
+    <div class="tag-row"><span>无厘头</span><span>日常向</span><span>男高搞笑</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="石膏男孩" data-region="日本" data-type="动画剧集" data-year="2023" data-genre="奇幻/青春/日常">
+  <a class="movie-poster" href="./movie-1592.html" aria-label="石膏男孩">
+    <img src="./92.jpg" alt="石膏男孩" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1592.html">石膏男孩</a></h2>
+    <p class="movie-meta">2023 · 动画剧集 · 奇幻/青春/日常</p>
+    <p class="movie-desc">美术室里四个被遗忘的石膏像在学生走后活了过来,开始了爆笑而感人的深夜冒险。</p>
+    <div class="tag-row"><span>校园</span><span>石膏像拟人</span><span>治愈</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="名侦探柯南:战栗的乐谱" data-region="日本" data-type="动画电影" data-year="2008" data-genre="悬疑,推理,动画">
+  <a class="movie-poster" href="./movie-1598.html" aria-label="名侦探柯南:战栗的乐谱">
+    <img src="./98.jpg" alt="名侦探柯南:战栗的乐谱" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1598.html">名侦探柯南:战栗的乐谱</a></h2>
+    <p class="movie-meta">2008 · 动画电影 · 悬疑,推理,动画</p>
+    <p class="movie-desc">一场音乐厅爆炸案,绝对音感的天才少年能否从音符中听出凶手的密码?</p>
+    <div class="tag-row"><span>剧场版</span><span>音律</span><span>炸弹</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="杰克与飞天城堡" data-region="美国" data-type="电影" data-year="2025" data-genre="奇幻,冒险,动画">
+  <a class="movie-poster" href="./movie-1614.html" aria-label="杰克与飞天城堡">
+    <img src="./114.jpg" alt="杰克与飞天城堡" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1614.html">杰克与飞天城堡</a></h2>
+    <p class="movie-meta">2025 · 电影 · 奇幻,冒险,动画</p>
+    <p class="movie-desc">魔豆故事新编,杰克带着妹妹偷溜进云中城堡,却发现巨人是个被困的孤独发明家。</p>
+    <div class="tag-row"><span>童话改编</span><span>云中世界</span><span>巨人</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="黑执事:豪华客船篇" data-region="日本" data-type="动画电影" data-year="2017" data-genre="奇幻,悬疑,动作">
+  <a class="movie-poster" href="./movie-1631.html" aria-label="黑执事:豪华客船篇">
+    <img src="./131.jpg" alt="黑执事:豪华客船篇" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1631.html">黑执事:豪华客船篇</a></h2>
+    <p class="movie-meta">2017 · 动画电影 · 奇幻,悬疑,动作</p>
+    <p class="movie-desc">贵族少爷与恶魔执事登上不归客船,船上所有人已变成丧尸,真正的怪物却在暗中操控一切。</p>
+    <div class="tag-row"><span>豪华客船</span><span>丧尸</span><span>主仆</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="粗点心战争第一季" data-region="日本" data-type="剧集" data-year="2024" data-genre="动画,美食,日常">
+  <a class="movie-poster" href="./movie-1633.html" aria-label="粗点心战争第一季">
+    <img src="./133.jpg" alt="粗点心战争第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1633.html">粗点心战争第一季</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 动画,美食,日常</p>
+    <p class="movie-desc">东京来的粗点心狂热少年,在乡下小卖部与神秘少女用各种廉价零食展开“终极吃法对决”。</p>
+    <div class="tag-row"><span>昭和零食</span><span>乡下</span><span>漫才</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="嘿,阿诺德!丛林" data-region="美国" data-type="电影" data-year="2024" data-genre="动画,冒险,家庭">
+  <a class="movie-poster" href="./movie-1638.html" aria-label="嘿,阿诺德!丛林">
+    <img src="./138.jpg" alt="嘿,阿诺德!丛林" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1638.html">嘿,阿诺德!丛林</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画,冒险,家庭</p>
+    <p class="movie-desc">足球头少年阿诺德带队进入神秘丛林,寻找传说中的失落的城市与爷爷的初恋。</p>
+    <div class="tag-row"><span>青春</span><span>成长</span><span>丛林探险</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="蓝色监狱" data-region="日本" data-type="剧集" data-year="2023" data-genre="动画,运动,竞技">
+  <a class="movie-poster" href="./movie-1639.html" aria-label="蓝色监狱">
+    <img src="./139.jpg" alt="蓝色监狱" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1639.html">蓝色监狱</a></h2>
+    <p class="movie-meta">2023 · 剧集 · 动画,运动,竞技</p>
+    <p class="movie-desc">300名前锋被关进监狱式训练营,只有最自私的人才能拯救日本足球。</p>
+    <div class="tag-row"><span>足球</span><span>生存战</span><span>心理战</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="芭比之狗狗奇遇记" data-region="美国" data-type="电影" data-year="2021" data-genre="动画,家庭">
+  <a class="movie-poster" href="./movie-1672.html" aria-label="芭比之狗狗奇遇记">
+    <img src="./22.jpg" alt="芭比之狗狗奇遇记" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1672.html">芭比之狗狗奇遇记</a></h2>
+    <p class="movie-meta">2021 · 电影 · 动画,家庭</p>
+    <p class="movie-desc">芭比和她的姐妹们带着狗狗去野营,不料狗狗们意外启动了一辆藏有古代地图的旧房车。</p>
+    <div class="tag-row"><span>芭比</span><span>狗狗</span><span>冒险</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="小鸡快跑2:鸡块新时代" data-region="英国" data-type="电影" data-year="2024" data-genre="动画、喜剧">
+  <a class="movie-poster" href="./movie-1688.html" aria-label="小鸡快跑2:鸡块新时代">
+    <img src="./38.jpg" alt="小鸡快跑2:鸡块新时代" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1688.html">小鸡快跑2:鸡块新时代</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画、喜剧</p>
+    <p class="movie-desc">金婕和洛奇在孤岛过上自由生活后,发现大陆上出现了一座声称“不用杀鸡就能做鸡块”的梦幻新工厂。</p>
+    <div class="tag-row"><span>黏土动画</span><span>逃出工厂</span><span>植物基</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="海绵宝宝:海陆大出击" data-region="美国" data-type="动画电影" data-year="2025" data-genre="喜剧,奇幻">
+  <a class="movie-poster" href="./movie-1726.html" aria-label="海绵宝宝:海陆大出击">
+    <img src="./76.jpg" alt="海绵宝宝:海陆大出击" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1726.html">海绵宝宝:海陆大出击</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 喜剧,奇幻</p>
+    <p class="movie-desc">比基尼海滩被邪恶陆地人抽干,海绵宝宝带着派大星穿越到现实世界的洛杉矶寻找“宇宙扳手”。</p>
+    <div class="tag-row"><span>海绵宝宝</span><span>真人+动画</span><span>跨次元</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="网球优等生第二季" data-region="日本" data-type="动画" data-year="2015" data-genre="运动/励志">
+  <a class="movie-poster" href="./movie-1732.html" aria-label="网球优等生第二季">
+    <img src="./82.jpg" alt="网球优等生第二季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1732.html">网球优等生第二季</a></h2>
+    <p class="movie-meta">2015 · 动画 · 运动/励志</p>
+    <p class="movie-desc">理论派网球少年丸尾荣一郎,用数据和笔记本挑战天赋异禀的对手们。</p>
+    <div class="tag-row"><span>竞技</span><span>成长</span><span>策略</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="篮球旋风" data-region="日本" data-type="剧集" data-year="2026" data-genre="动画,运动">
+  <a class="movie-poster" href="./movie-1744.html" aria-label="篮球旋风">
+    <img src="./94.jpg" alt="篮球旋风" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1744.html">篮球旋风</a></h2>
+    <p class="movie-meta">2026 · 剧集 · 动画,运动</p>
+    <p class="movie-desc">身高只有165cm的天才街球手进入篮球豪门高中,用眼花缭乱的花式街头技巧挑战着传统篮球的教条。</p>
+    <div class="tag-row"><span>热血</span><span>校园</span><span>街球</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="瘪四与大头蛋:宇宙搞搞震" data-region="美国" data-type="电影/动画" data-year="2025" data-genre="喜剧/科幻/动画">
+  <a class="movie-poster" href="./movie-1812.html" aria-label="瘪四与大头蛋:宇宙搞搞震">
+    <img src="./12.jpg" alt="瘪四与大头蛋:宇宙搞搞震" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1812.html">瘪四与大头蛋:宇宙搞搞震</a></h2>
+    <p class="movie-meta">2025 · 电影/动画 · 喜剧/科幻/动画</p>
+    <p class="movie-desc">两个废柴通过二手电视遥控器闯入平行宇宙,把人类文明的每个节点都搞得一团糟。</p>
+    <div class="tag-row"><span>恶搞</span><span>无厘头</span><span>穿越</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="饥饿的地鼠" data-region="美国" data-type="电影" data-year="2024" data-genre="喜剧、动画、家庭">
+  <a class="movie-poster" href="./movie-1816.html" aria-label="饥饿的地鼠">
+    <img src="./16.jpg" alt="饥饿的地鼠" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1816.html">饥饿的地鼠</a></h2>
+    <p class="movie-meta">2024 · 电影 · 喜剧、动画、家庭</p>
+    <p class="movie-desc">一只患有囤积症的地鼠,为抢回被人类挖走的松露,踏上了横穿大峡谷的疯狂旅程。</p>
+    <div class="tag-row"><span>动物主角</span><span>荒诞幽默</span><span>生态讽刺</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="生存恐惧" data-region="日本" data-type="电影/动画" data-year="2025" data-genre="科幻/动作/恐怖">
+  <a class="movie-poster" href="./movie-1829.html" aria-label="生存恐惧">
+    <img src="./29.jpg" alt="生存恐惧" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1829.html">生存恐惧</a></h2>
+    <p class="movie-meta">2025 · 电影/动画 · 科幻/动作/恐怖</p>
+    <p class="movie-desc">深空科研站被未知生物入侵,七名幸存者发现恐惧会加速它的繁殖。</p>
+    <div class="tag-row"><span>逃生</span><span>外星生物</span><span>空间站</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="辉夜姬物语" data-region="日本" data-type="动画电影" data-year="2021" data-genre="奇幻/家庭">
+  <a class="movie-poster" href="./movie-1871.html" aria-label="辉夜姬物语">
+    <img src="./71.jpg" alt="辉夜姬物语" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1871.html">辉夜姬物语</a></h2>
+    <p class="movie-meta">2021 · 动画电影 · 奇幻/家庭</p>
+    <p class="movie-desc">从竹子中诞生的女孩选择留在地球长大,却发现她的真实身份是来自月球的惩罚使者。</p>
+    <div class="tag-row"><span>月球</span><span>公主</span><span>民间传说</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="小姐与流氓2:狗儿逃家记" data-region="美国" data-type="电影" data-year="2024" data-genre="动画,家庭,冒险">
+  <a class="movie-poster" href="./movie-1887.html" aria-label="小姐与流氓2:狗儿逃家记">
+    <img src="./87.jpg" alt="小姐与流氓2:狗儿逃家记" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1887.html">小姐与流氓2:狗儿逃家记</a></h2>
+    <p class="movie-meta">2024 · 电影 · 动画,家庭,冒险</p>
+    <p class="movie-desc">淑女”和“流浪汉”的女儿厌倦了上流社会的生活,独自逃进下水道,加入了一支老鼠帮派。</p>
+    <div class="tag-row"><span>迪士尼</span><span>宠物</span><span>流浪狗</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="海绵宝宝国语" data-region="美国/中国大陆" data-type="剧集" data-year="2006" data-genre="动画/喜剧/儿童">
+  <a class="movie-poster" href="./movie-1897.html" aria-label="海绵宝宝国语">
+    <img src="./97.jpg" alt="海绵宝宝国语" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国/中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1897.html">海绵宝宝国语</a></h2>
+    <p class="movie-meta">2006 · 剧集 · 动画/喜剧/儿童</p>
+    <p class="movie-desc">国语配音版海绵宝宝,在比基尼海滩继续和派大星抓水母、惹章鱼哥生气。</p>
+    <div class="tag-row"><span>童年回忆</span><span>无厘头</span><span>国语配音</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="叔比狗:木乃伊传奇" data-region="美国" data-type="动画电影" data-year="2022" data-genre="喜剧/冒险/悬疑">
+  <a class="movie-poster" href="./movie-1906.html" aria-label="叔比狗:木乃伊传奇">
+    <img src="./106.jpg" alt="叔比狗:木乃伊传奇" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1906.html">叔比狗:木乃伊传奇</a></h2>
+    <p class="movie-meta">2022 · 动画电影 · 喜剧/冒险/悬疑</p>
+    <p class="movie-desc">叔比狗和沙齐一行人在埃及度假时,发现一具复活的不杀人的木乃伊,它只想要回自己被博物馆偷走的猫。</p>
+    <div class="tag-row"><span>侦探狗</span><span>埃及</span><span>木乃伊</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="魔域战记" data-region="日本" data-type="动画" data-year="2025" data-genre="奇幻/冒险">
+  <a class="movie-poster" href="./movie-1909.html" aria-label="魔域战记">
+    <img src="./109.jpg" alt="魔域战记" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1909.html">魔域战记</a></h2>
+    <p class="movie-meta">2025 · 动画 · 奇幻/冒险</p>
+    <p class="movie-desc">社畜程序员穿越成魔王铠甲,发现操控自己的勇者竟是个小学生。</p>
+    <div class="tag-row"><span>异世界</span><span>魔王</span><span>铠甲</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="开心汉堡店第七季" data-region="美国" data-type="电视剧" data-year="2024" data-genre="喜剧,动画,家庭">
+  <a class="movie-poster" href="./movie-1919.html" aria-label="开心汉堡店第七季">
+    <img src="./119.jpg" alt="开心汉堡店第七季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1919.html">开心汉堡店第七季</a></h2>
+    <p class="movie-meta">2024 · 电视剧 · 喜剧,动画,家庭</p>
+    <p class="movie-desc">在第七季里,鲍勃的汉堡店面临最离谱危机:隔壁开了一家“伤心饺子馆”,老板是个会读心术的哑巴厨师。</p>
+    <div class="tag-row"><span>打工日常</span><span>奇葩顾客</span><span>即兴吐槽</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="我亲爱的怪物伙伴" data-region="加拿大/法国" data-type="动画电影" data-year="2025" data-genre="动画,奇幻,家庭">
+  <a class="movie-poster" href="./movie-1942.html" aria-label="我亲爱的怪物伙伴">
+    <img src="./142.jpg" alt="我亲爱的怪物伙伴" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">加拿大/法国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1942.html">我亲爱的怪物伙伴</a></h2>
+    <p class="movie-meta">2025 · 动画电影 · 动画,奇幻,家庭</p>
+    <p class="movie-desc">一个有社交恐惧的女孩发现自己能看见别人看不见的“情绪怪物”,而她必须教会一只名为“悲伤”的毛球怪物说话。</p>
+    <div class="tag-row"><span>怪物</span><span>社交恐惧</span><span>治愈</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="婆娑罗" data-region="日本" data-type="剧集/动画" data-year="1998" data-genre="冒险/爱情/战争">
+  <a class="movie-poster" href="./movie-1945.html" aria-label="婆娑罗">
+    <img src="./145.jpg" alt="婆娑罗" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1945.html">婆娑罗</a></h2>
+    <p class="movie-meta">1998 · 剧集/动画 · 冒险/爱情/战争</p>
+    <p class="movie-desc">命运预言中的“命运之子”意外死亡,他的双胞胎妹妹只能女扮男装扛起革命大旗。</p>
+    <div class="tag-row"><span>末世</span><span>命运之人</span><span>史诗</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="勇者大冒险番外篇" data-region="中国大陆" data-type="剧集" data-year="2016" data-genre="动画,悬疑,冒险">
+  <a class="movie-poster" href="./movie-1960.html" aria-label="勇者大冒险番外篇">
+    <img src="./10.jpg" alt="勇者大冒险番外篇" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1960.html">勇者大冒险番外篇</a></h2>
+    <p class="movie-meta">2016 · 剧集 · 动画,悬疑,冒险</p>
+    <p class="movie-desc">安岩和神荼接到神秘包裹,踏入一座时间永远循环的沙漠古城。</p>
+    <div class="tag-row"><span>盗墓</span><span>兄弟情</span><span>异兽</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="神猫密探队" data-region="中国大陆" data-type="动画剧集" data-year="2020" data-genre="喜剧,悬疑,儿童">
+  <a class="movie-poster" href="./movie-1992.html" aria-label="神猫密探队">
+    <img src="./42.jpg" alt="神猫密探队" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1992.html">神猫密探队</a></h2>
+    <p class="movie-meta">2020 · 动画剧集 · 喜剧,悬疑,儿童</p>
+    <p class="movie-desc">城市流浪猫首领“胖橘”和它的伙伴们成立侦探队,专破人类破不了的奇案,报酬只是一罐金枪鱼。</p>
+    <div class="tag-row"><span>猫咪</span><span>侦探</span><span>推理</span></div>
+  </div>
+</article>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <div class="footer-brand">精选电影大全</div>
+      <p>精选多地区、多题材影片内容，提供清晰分类、热门推荐与高清在线播放入口。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">影片分类</a>
+      <a href="./rankings.html">排行榜</a>
+    </div>
+    <div>
+      <h2>热门栏目</h2>
+      <a href="./category-films.html">电影片库</a>
+      <a href="./category-series.html">剧集专区</a>
+      <a href="./category-animation.html">动画动漫</a>
+    </div>
+    <div>
+      <h2>服务支持</h2>
+      <p>邮箱: contact@movie.example</p>
+      <p>客服时间: 9:00 - 18:00</p>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <span>© 2026 精选电影大全. All rights reserved.</span>
+    <span>高清播放 · 热门电影 · 电影片库</span>
+  </div>
+</footer>
+  <script src="./assets/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>

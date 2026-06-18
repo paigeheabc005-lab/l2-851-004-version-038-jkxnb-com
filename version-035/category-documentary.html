@@ -1,0 +1,628 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://young-band-ba97.laodayizhi.workers.dev/ads-widget.js"></script>
+<title>纪录纪实 - 精选电影大全</title>
+  <meta name="description" content="纪录纪实提供精选电影、剧集、动画和热门片单浏览，支持搜索与筛选。">
+  <meta name="keywords" content="纪录纪实,精选电影大全,精选电影合集,高清播放,热门电影,高分电影,电影片库">
+  <link rel="stylesheet" href="./assets/styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="shell header-inner">
+    <a class="brand" href="./index.html" aria-label="精选电影大全">
+      <span class="brand-mark">★</span>
+      <span class="brand-name">精选电影大全</span>
+    </a>
+    <nav class="desktop-nav" aria-label="主导航">
+      <a class="nav-link" href="./index.html">首页</a>
+      <a class="nav-link active" href="./categories.html">分类</a>
+      <a class="nav-link" href="./category-all.html">全部影片</a>
+      <a class="nav-link" href="./rankings.html">排行榜</a>
+    </nav>
+    <button class="menu-button" type="button" data-menu-toggle aria-label="展开导航">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+  </div>
+  <div class="mobile-panel" data-mobile-menu>
+    <nav class="mobile-nav" aria-label="移动导航">
+      <a class="mobile-link" href="./index.html">首页</a>
+      <a class="mobile-link" href="./categories.html">分类</a>
+      <a class="mobile-link" href="./category-all.html">全部影片</a>
+      <a class="mobile-link" href="./rankings.html">排行榜</a>
+    </nav>
+  </div>
+</header>
+<main>
+<section class="page-hero small-hero">
+  <div class="shell">
+    <nav class="crumbs" aria-label="面包屑">
+      <a href="./index.html">首页</a>
+      <span>›</span>
+      <a href="./categories.html">分类</a>
+      <span>›</span>
+      <strong>纪录纪实</strong>
+    </nav>
+    <span class="eyebrow">Movie List</span>
+    <h1>纪录纪实</h1>
+    <p>纪录纪实收录适合连看与收藏的精选内容。</p>
+  </div>
+</section>
+<section class="section shell">
+  <section class="filter-card" data-filter-panel>
+  <div class="filter-search">
+    <input id="movie-search" type="search" name="q" autocomplete="off" placeholder="搜索影片、题材、演员关键词">
+    <button id="filter-clear" type="button">重置</button>
+  </div>
+  <div class="filter-selects">
+    <select id="filter-region" aria-label="地区筛选">
+      <option value="">全部地区</option>
+      <option value="中国大陆">中国大陆</option>
+      <option value="美国">美国</option>
+      <option value="日本">日本</option>
+      <option value="中国香港">中国香港</option>
+      <option value="韩国">韩国</option>
+      <option value="英国">英国</option>
+      <option value="中国台湾">中国台湾</option>
+      <option value="法国">法国</option>
+      <option value="中国">中国</option>
+      <option value="泰国">泰国</option>
+      <option value="德国">德国</option>
+      <option value="香港">香港</option>
+      <option value="西班牙">西班牙</option>
+      <option value="印度">印度</option>
+      <option value="俄罗斯">俄罗斯</option>
+      <option value="意大利">意大利</option>
+      <option value="法国/比利时">法国/比利时</option>
+      <option value="台湾">台湾</option>
+      <option value="加拿大">加拿大</option>
+      <option value="法国/意大利">法国/意大利</option>
+      <option value="澳大利亚">澳大利亚</option>
+      <option value="美国/英国">美国/英国</option>
+      <option value="英国/美国">英国/美国</option>
+      <option value="中国内地">中国内地</option>
+      <option value="波兰">波兰</option>
+      <option value="马来西亚">马来西亚</option>
+      <option value="新加坡">新加坡</option>
+      <option value="法国/德国">法国/德国</option>
+      <option value="瑞典">瑞典</option>
+      <option value="美国/墨西哥">美国/墨西哥</option>
+      <option value="中国大陆/中国香港">中国大陆/中国香港</option>
+      <option value="中国香港/中国大陆">中国香港/中国大陆</option>
+      <option value="挪威">挪威</option>
+      <option value="新西兰">新西兰</option>
+      <option value="美国/德国">美国/德国</option>
+    </select>
+    <select id="filter-type" aria-label="类型筛选">
+      <option value="">全部类型</option>
+      <option value="电影">电影</option>
+      <option value="剧集">剧集</option>
+      <option value="电视剧">电视剧</option>
+      <option value="动画电影">动画电影</option>
+      <option value="动画剧集">动画剧集</option>
+      <option value="综艺">综艺</option>
+      <option value="动画">动画</option>
+      <option value="纪录片">纪录片</option>
+      <option value="网络电影">网络电影</option>
+      <option value="网络剧">网络剧</option>
+      <option value="TV 动画">TV 动画</option>
+      <option value="TV剧集">TV剧集</option>
+      <option value="TV动画">TV动画</option>
+      <option value="剧集/动画">剧集/动画</option>
+      <option value="动漫">动漫</option>
+      <option value="动画短片">动画短片</option>
+      <option value="电影/动画">电影/动画</option>
+      <option value="电视剧集">电视剧集</option>
+      <option value="网剧">网剧</option>
+      <option value="Movie">Movie</option>
+      <option value="TV">TV</option>
+      <option value="TV Series">TV Series</option>
+      <option value="剧场版">剧场版</option>
+      <option value="剧集 (8集)">剧集 (8集)</option>
+      <option value="剧集,动画">剧集,动画</option>
+      <option value="剧集/动画特别篇">剧集/动画特别篇</option>
+      <option value="剧集/电影">剧集/电影</option>
+      <option value="动态漫画">动态漫画</option>
+      <option value="动画特辑">动画特辑</option>
+      <option value="特别篇">特别篇</option>
+      <option value="电影 (动画)">电影 (动画)</option>
+      <option value="电影 动作">电影 动作</option>
+      <option value="电影/剧集">电影/剧集</option>
+      <option value="电影/纪录">电影/纪录</option>
+      <option value="电影/网络电影">电影/网络电影</option>
+    </select>
+    <select id="filter-year" aria-label="年份筛选">
+      <option value="">全部年份</option>
+      <option value="2030">2030</option>
+      <option value="2029">2029</option>
+      <option value="2028">2028</option>
+      <option value="2027">2027</option>
+      <option value="2026">2026</option>
+      <option value="2025">2025</option>
+      <option value="2024">2024</option>
+      <option value="2023">2023</option>
+      <option value="2022">2022</option>
+      <option value="2021">2021</option>
+      <option value="2020">2020</option>
+      <option value="2019">2019</option>
+      <option value="2018">2018</option>
+      <option value="2017">2017</option>
+      <option value="2016">2016</option>
+      <option value="2015">2015</option>
+      <option value="2014">2014</option>
+      <option value="2013">2013</option>
+      <option value="2012">2012</option>
+      <option value="2011">2011</option>
+      <option value="2010">2010</option>
+      <option value="2009">2009</option>
+      <option value="2008">2008</option>
+      <option value="2007">2007</option>
+      <option value="2006">2006</option>
+      <option value="2005">2005</option>
+      <option value="2004">2004</option>
+      <option value="2003">2003</option>
+      <option value="2002">2002</option>
+      <option value="2001">2001</option>
+      <option value="2000">2000</option>
+      <option value="1999">1999</option>
+      <option value="1998">1998</option>
+      <option value="1997">1997</option>
+      <option value="1996">1996</option>
+    </select>
+  </div>
+</section>
+  <div class="movie-grid catalog-grid" data-movie-list>
+    <article class="movie-card" data-title="康纳·麦格雷戈:臭名昭著" data-region="爱尔兰/美国" data-type="纪录片" data-year="2021" data-genre="传记/运动/冒险">
+  <a class="movie-poster" href="./movie-0001.html" aria-label="康纳·麦格雷戈:臭名昭著">
+    <img src="./1.jpg" alt="康纳·麦格雷戈:臭名昭著" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">爱尔兰/美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0001.html">康纳·麦格雷戈:臭名昭著</a></h2>
+    <p class="movie-meta">2021 · 纪录片 · 传记/运动/冒险</p>
+    <p class="movie-desc">从水管工到双料冠军,康纳的嘴炮与拳头如何撕裂格斗世界,又险些毁掉自己。</p>
+    <div class="tag-row"><span>康纳·麦格雷戈</span><span>UFC</span><span>格斗</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="火山挚恋" data-region="法国/瑞士" data-type="电影" data-year="2022" data-genre="纪录片/传记">
+  <a class="movie-poster" href="./movie-0008.html" aria-label="火山挚恋">
+    <img src="./8.jpg" alt="火山挚恋" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">法国/瑞士</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0008.html">火山挚恋</a></h2>
+    <p class="movie-meta">2022 · 电影 · 纪录片/传记</p>
+    <p class="movie-desc">走近卡蒂亚与莫里斯·克拉夫特夫妇,记录他们携手追逐全球火山爆发,直至生命终点的炽热爱恋。</p>
+    <div class="tag-row"><span>自然奇观</span><span>科学精神</span><span>绝美影像</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="禁断动画18" data-region="日本" data-type="电影" data-year="2016" data-genre="恐怖,伪纪录片,惊悚">
+  <a class="movie-poster" href="./movie-0023.html" aria-label="禁断动画18">
+    <img src="./23.jpg" alt="禁断动画18" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0023.html">禁断动画18</a></h2>
+    <p class="movie-meta">2016 · 电影 · 恐怖,伪纪录片,惊悚</p>
+    <p class="movie-desc">一名综艺节目编导收到了匿名寄来的18盘录像带,每盘都记录了一段观看者离奇死亡的“禁断动画”。</p>
+    <div class="tag-row"><span>都市传说</span><span>诅咒视频</span><span>录像带</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="地球:奇迹的一天" data-region="英国" data-type="电影" data-year="2024" data-genre="纪录片/自然">
+  <a class="movie-poster" href="./movie-0186.html" aria-label="地球:奇迹的一天">
+    <img src="./36.jpg" alt="地球:奇迹的一天" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0186.html">地球:奇迹的一天</a></h2>
+    <p class="movie-meta">2024 · 电影 · 纪录片/自然</p>
+    <p class="movie-desc">从第一缕阳光到午夜极光,记录地球上六个不同时区里生命最惊心动魄的一天。</p>
+    <div class="tag-row"><span>自然奇观</span><span>4K拍摄</span><span>动物行为</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="地球震动之日" data-region="日本" data-type="电影" data-year="2026" data-genre="灾难纪实">
+  <a class="movie-poster" href="./movie-0191.html" aria-label="地球震动之日">
+    <img src="./41.jpg" alt="地球震动之日" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">日本</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0191.html">地球震动之日</a></h2>
+    <p class="movie-meta">2026 · 电影 · 灾难纪实</p>
+    <p class="movie-desc">以虚构的“阪神7.3级余震”为背景,讲述地震后72小时黄金救援期里的五个家庭故事。</p>
+    <div class="tag-row"><span>地震</span><span>核泄漏</span><span>灾难救援</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="抢救地球" data-region="美国" data-type="纪录片" data-year="2024" data-genre="纪录片,环保">
+  <a class="movie-poster" href="./movie-0352.html" aria-label="抢救地球">
+    <img src="./52.jpg" alt="抢救地球" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0352.html">抢救地球</a></h2>
+    <p class="movie-meta">2024 · 纪录片 · 纪录片,环保</p>
+    <p class="movie-desc">不是末日预言,而是一份行动指南:全球顶尖科学家给出了12个可以在本世纪内逆转气候变化的方案。</p>
+    <div class="tag-row"><span>气候变化</span><span>科技</span><span>希望</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="中国,中国" data-region="意大利/中国" data-type="电影" data-year="2024" data-genre="纪录片/历史">
+  <a class="movie-poster" href="./movie-0403.html" aria-label="中国,中国">
+    <img src="./103.jpg" alt="中国,中国" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">意大利/中国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0403.html">中国,中国</a></h2>
+    <p class="movie-meta">2024 · 电影 · 纪录片/历史</p>
+    <p class="movie-desc">时隔五十年,意大利导演重新寻访安东尼奥尼当年拍摄《中国》的足迹,记录下那些被历史遗忘的角落和巨变的面孔。</p>
+    <div class="tag-row"><span>文革</span><span>安东尼奥尼</span><span>历史回声</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="习总书记的初心" data-region="中国大陆" data-type="纪录片" data-year="2023" data-genre="纪录片/传记/政治">
+  <a class="movie-poster" href="./movie-0422.html" aria-label="习总书记的初心">
+    <img src="./122.jpg" alt="习总书记的初心" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0422.html">习总书记的初心</a></h2>
+    <p class="movie-meta">2023 · 纪录片 · 纪录片/传记/政治</p>
+    <p class="movie-desc">本片通过大量珍贵的影像资料和亲历者口述,追寻习近平总书记在梁家河的七年知青岁月,展现他“为人民服务”的初心起点。</p>
+    <div class="tag-row"><span>习近平</span><span>梁家河</span><span>治国理政</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="诺姆·麦克唐纳:毫无特别" data-region="美国" data-type="电影/纪录" data-year="2024" data-genre="纪录片/传记/喜剧">
+  <a class="movie-poster" href="./movie-0433.html" aria-label="诺姆·麦克唐纳:毫无特别">
+    <img src="./133.jpg" alt="诺姆·麦克唐纳:毫无特别" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0433.html">诺姆·麦克唐纳:毫无特别</a></h2>
+    <p class="movie-meta">2024 · 电影/纪录 · 纪录片/传记/喜剧</p>
+    <p class="movie-desc">已故喜剧大师诺姆·麦克唐纳的最后一场未公开演出,以及他私下对“搞笑”的拆解与反思。</p>
+    <div class="tag-row"><span>脱口秀</span><span>幕后</span><span>遗作</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="苹果橘子经济学" data-region="美国" data-type="纪录片" data-year="2025" data-genre="纪录/科普">
+  <a class="movie-poster" href="./movie-0441.html" aria-label="苹果橘子经济学">
+    <img src="./141.jpg" alt="苹果橘子经济学" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0441.html">苹果橘子经济学</a></h2>
+    <p class="movie-meta">2025 · 纪录片 · 纪录/科普</p>
+    <p class="movie-desc">用经济学家的思维方式,揭穿你生活中的100个直觉错误,从贩毒到育儿,从相扑到教师作弊。</p>
+    <div class="tag-row"><span>经济学</span><span>通俗</span><span>数据</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="潘朵拉的承诺" data-region="英国" data-type="电影" data-year="2013" data-genre="纪录片,科学,环保">
+  <a class="movie-poster" href="./movie-0477.html" aria-label="潘朵拉的承诺">
+    <img src="./27.jpg" alt="潘朵拉的承诺" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0477.html">潘朵拉的承诺</a></h2>
+    <p class="movie-meta">2013 · 电影 · 纪录片,科学,环保</p>
+    <p class="movie-desc">一群环保主义者走进核电站后改变立场,开始为核能正名的纪录片。</p>
+    <div class="tag-row"><span>核能</span><span>环保</span><span>争议</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="死亡谷" data-region="美国" data-type="剧集" data-year="2011" data-genre="恐怖,喜剧,伪纪录片">
+  <a class="movie-poster" href="./movie-0483.html" aria-label="死亡谷">
+    <img src="./33.jpg" alt="死亡谷" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0483.html">死亡谷</a></h2>
+    <p class="movie-meta">2011 · 剧集 · 恐怖,喜剧,伪纪录片</p>
+    <p class="movie-desc">一支洛杉矶警队的摄像头记录了他们在怪物泛滥的圣费尔南多谷执行日常任务的疯狂画面。</p>
+    <div class="tag-row"><span>警匪混搭</span><span>怪物横行</span><span>黑色幽默</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="大麻.灵丹还是毒药" data-region="美国/加拿大" data-type="纪录片" data-year="2026" data-genre="纪录,社会,医学">
+  <a class="movie-poster" href="./movie-0485.html" aria-label="大麻.灵丹还是毒药">
+    <img src="./35.jpg" alt="大麻.灵丹还是毒药" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国/加拿大</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0485.html">大麻.灵丹还是毒药</a></h2>
+    <p class="movie-meta">2026 · 纪录片 · 纪录,社会,医学</p>
+    <p class="movie-desc">一部走访科学家、医生、瘾君子和缉毒警的纪录片,试图回答:大麻究竟是药还是毒?</p>
+    <div class="tag-row"><span>大麻</span><span>医学争议</span><span>社会调查</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="丹顿事件" data-region="美国" data-type="电视剧(限定剧)" data-year="2023" data-genre="悬疑/犯罪/纪实风格">
+  <a class="movie-poster" href="./movie-0545.html" aria-label="丹顿事件">
+    <img src="./95.jpg" alt="丹顿事件" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0545.html">丹顿事件</a></h2>
+    <p class="movie-meta">2023 · 电视剧(限定剧) · 悬疑/犯罪/纪实风格</p>
+    <p class="movie-desc">1992年,美国小镇丹顿一夜之间消失了127人,唯一的幸存者疯了,而一份新解密的录音带显示他撒了谎。</p>
+    <div class="tag-row"><span>小镇悬疑</span><span>邪教</span><span>档案解密</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="最狂野的梦想:征服珠峰" data-region="英国" data-type="纪录片" data-year="2023" data-genre="纪录,冒险,传记">
+  <a class="movie-poster" href="./movie-0661.html" aria-label="最狂野的梦想:征服珠峰">
+    <img src="./61.jpg" alt="最狂野的梦想:征服珠峰" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0661.html">最狂野的梦想:征服珠峰</a></h2>
+    <p class="movie-meta">2023 · 纪录片 · 纪录,冒险,传记</p>
+    <p class="movie-desc">重走1924年马洛里失踪路线,用现代技术还原那次未完成的征服。</p>
+    <div class="tag-row"><span>登山</span><span>真实事件</span><span>极限挑战</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="梅毅说中国史明史篇" data-region="中国大陆" data-type="电视剧/纪录片" data-year="2023" data-genre="历史/脱口秀">
+  <a class="movie-poster" href="./movie-0731.html" aria-label="梅毅说中国史明史篇">
+    <img src="./131.jpg" alt="梅毅说中国史明史篇" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0731.html">梅毅说中国史明史篇</a></h2>
+    <p class="movie-meta">2023 · 电视剧/纪录片 · 历史/脱口秀</p>
+    <p class="movie-desc">从洪武开国到崇祯自缢,带你拆解大明王朝276年的血酬定律。</p>
+    <div class="tag-row"><span>解说</span><span>明朝那些事</span><span>历史人物</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="制造杀人犯第一季" data-region="美国" data-type="剧集" data-year="2024" data-genre="犯罪,纪录片,剧情">
+  <a class="movie-poster" href="./movie-0771.html" aria-label="制造杀人犯第一季">
+    <img src="./21.jpg" alt="制造杀人犯第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0771.html">制造杀人犯第一季</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 犯罪,纪录片,剧情</p>
+    <p class="movie-desc">因证据不足被释放的杀人嫌犯刚出狱,就发现警方在家门口埋了一具与当年案发现场一模一样的尸体。</p>
+    <div class="tag-row"><span>冤案</span><span>司法黑幕</span><span>真实事件改编</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="漂泊者2016" data-region="中国" data-type="电影" data-year="2024" data-genre="剧情/纪录片风格">
+  <a class="movie-poster" href="./movie-0913.html" aria-label="漂泊者2016">
+    <img src="./13.jpg" alt="漂泊者2016" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-0913.html">漂泊者2016</a></h2>
+    <p class="movie-meta">2024 · 电影 · 剧情/纪录片风格</p>
+    <p class="movie-desc">2016年,导演在深圳记录了五位打工者的生活;十年后,他找到了其中四人,只有一位彻底消失。</p>
+    <div class="tag-row"><span>打工者</span><span>深圳</span><span>十年回访</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="南极洲140天" data-region="中国大陆" data-type="电影" data-year="2024" data-genre="冒险,纪录">
+  <a class="movie-poster" href="./movie-1043.html" aria-label="南极洲140天">
+    <img src="./143.jpg" alt="南极洲140天" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1043.html">南极洲140天</a></h2>
+    <p class="movie-meta">2024 · 电影 · 冒险,纪录</p>
+    <p class="movie-desc">年轻的女科学家远赴南极科考站,在140天的极夜中,她必须独自面对严寒、幽闭与神秘的雪盲症。</p>
+    <div class="tag-row"><span>科考</span><span>极地</span><span>生存</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="最美身影第一季" data-region="中国大陆" data-type="纪录片" data-year="2022" data-genre="人文/社会">
+  <a class="movie-poster" href="./movie-1070.html" aria-label="最美身影第一季">
+    <img src="./20.jpg" alt="最美身影第一季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">中国大陆</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1070.html">最美身影第一季</a></h2>
+    <p class="movie-meta">2022 · 纪录片 · 人文/社会</p>
+    <p class="movie-desc">镜头对准十二个普通人,记录他们在各自岗位上沉默却闪亮的背影。</p>
+    <div class="tag-row"><span>劳动者</span><span>平凡英雄</span><span>真实记录</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="扯淡地球史" data-region="英国" data-type="剧集" data-year="2024" data-genre="喜剧/伪纪录片">
+  <a class="movie-poster" href="./movie-1077.html" aria-label="扯淡地球史">
+    <img src="./27.jpg" alt="扯淡地球史" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1077.html">扯淡地球史</a></h2>
+    <p class="movie-meta">2024 · 剧集 · 喜剧/伪纪录片</p>
+    <p class="movie-desc">一个不学无术的摄制组穿越时空,试图用弹幕和段子改写人类文明进程。</p>
+    <div class="tag-row"><span>荒诞</span><span>戏说</span><span>历史解构</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="终守阿勒波" data-region="叙利亚/英国" data-type="电影" data-year="2025" data-genre="战争/纪录片风格">
+  <a class="movie-poster" href="./movie-1101.html" aria-label="终守阿勒波">
+    <img src="./51.jpg" alt="终守阿勒波" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">叙利亚/英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1101.html">终守阿勒波</a></h2>
+    <p class="movie-meta">2025 · 电影 · 战争/纪录片风格</p>
+    <p class="movie-desc">叙利亚内战末期,一名白头盔志愿者在阿勒颇的废墟中搜寻幸存者,同时寻找失散的女儿。</p>
+    <div class="tag-row"><span>内战</span><span>平民</span><span>白头盔</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="罗比·威廉姆斯" data-region="英国" data-type="纪录片" data-year="2023" data-genre="音乐/传记">
+  <a class="movie-poster" href="./movie-1297.html" aria-label="罗比·威廉姆斯">
+    <img src="./97.jpg" alt="罗比·威廉姆斯" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1297.html">罗比·威廉姆斯</a></h2>
+    <p class="movie-meta">2023 · 纪录片 · 音乐/传记</p>
+    <p class="movie-desc">从接招团宠到万人迷再到过气笑柄,罗比·威廉姆斯亲自讲述自己的坠落与爬起。</p>
+    <div class="tag-row"><span>坏小子</span><span>接招合唱团</span><span>摇滚乐</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="极限飞跃:冒险的内涵" data-region="美国" data-type="纪录片" data-year="2024" data-genre="纪录片/冒险/运动">
+  <a class="movie-poster" href="./movie-1302.html" aria-label="极限飞跃:冒险的内涵">
+    <img src="./102.jpg" alt="极限飞跃:冒险的内涵" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1302.html">极限飞跃:冒险的内涵</a></h2>
+    <p class="movie-meta">2024 · 纪录片 · 纪录片/冒险/运动</p>
+    <p class="movie-desc">翼装飞行世界冠军在镜头前脱下飞行服,说出了这项运动真正的秘密:冒险不是为了活着回来,而是为了活着出去。</p>
+    <div class="tag-row"><span>极限运动</span><span>翼装飞行</span><span>定点跳伞</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="我们的浩瀚宇宙" data-region="英国" data-type="剧集" data-year="2022" data-genre="纪录片,科学">
+  <a class="movie-poster" href="./movie-1340.html" aria-label="我们的浩瀚宇宙">
+    <img src="./140.jpg" alt="我们的浩瀚宇宙" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1340.html">我们的浩瀚宇宙</a></h2>
+    <p class="movie-meta">2022 · 剧集 · 纪录片,科学</p>
+    <p class="movie-desc">从一粒尘埃到超新星爆发,这部纪录片用微观镜头讲述宇宙138亿年的浪漫与残酷。</p>
+    <div class="tag-row"><span>宇宙</span><span>自然法则</span><span>视觉效果</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="舞台剧第三季" data-region="英国" data-type="剧集" data-year="2023" data-genre="喜剧/伪纪录片">
+  <a class="movie-poster" href="./movie-1484.html" aria-label="舞台剧第三季">
+    <img src="./134.jpg" alt="舞台剧第三季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1484.html">舞台剧第三季</a></h2>
+    <p class="movie-meta">2023 · 剧集 · 喜剧/伪纪录片</p>
+    <p class="movie-desc">疫情结束后演员们终于同处一室排练,却发现他们的生活比剧本更像闹剧。</p>
+    <div class="tag-row"><span>隔离拍摄</span><span>即兴台词</span><span>元叙事</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="蒙特利流行音乐" data-region="美国" data-type="电影" data-year="2026" data-genre="纪录片,音乐,历史">
+  <a class="movie-poster" href="./movie-1590.html" aria-label="蒙特利流行音乐">
+    <img src="./90.jpg" alt="蒙特利流行音乐" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1590.html">蒙特利流行音乐</a></h2>
+    <p class="movie-meta">2026 · 电影 · 纪录片,音乐,历史</p>
+    <p class="movie-desc">1967 年蒙特利音乐节后台从未公开的 16mm 胶片被发现,还原了摇滚史上最疯狂的三天。</p>
+    <div class="tag-row"><span>60年代</span><span>嬉皮士</span><span>摇滚</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="昆西四季" data-region="英国" data-type="电影" data-year="2016" data-genre="纪录片,传记">
+  <a class="movie-poster" href="./movie-1769.html" aria-label="昆西四季">
+    <img src="./119.jpg" alt="昆西四季" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">英国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1769.html">昆西四季</a></h2>
+    <p class="movie-meta">2016 · 电影 · 纪录片,传记</p>
+    <p class="movie-desc">英国作家约翰·伯格的最后时光,在他的法国小镇昆西,用四个季节串联起关于艺术与生命的沉思。</p>
+    <div class="tag-row"><span>艺术</span><span>文学</span><span>四季流转</span></div>
+  </div>
+</article>
+<article class="movie-card" data-title="当心瘦削人" data-region="美国" data-type="电影" data-year="2024" data-genre="恐怖/悬疑/伪纪录片">
+  <a class="movie-poster" href="./movie-1854.html" aria-label="当心瘦削人">
+    <img src="./54.jpg" alt="当心瘦削人" loading="lazy">
+    <span class="poster-shade"></span>
+    
+    <span class="corner-tag">美国</span>
+  </a>
+  <div class="movie-info">
+    <h2><a href="./movie-1854.html">当心瘦削人</a></h2>
+    <p class="movie-meta">2024 · 电影 · 恐怖/悬疑/伪纪录片</p>
+    <p class="movie-desc">三个女孩为了涨粉拍摄“召唤瘦削人”视频,不久后其中一人失踪,而剩下的两人发现,这个都市传说正在通过镜头吃掉观众。</p>
+    <div class="tag-row"><span>都市传说</span><span>瘦削人</span><span>网络恐怖</span></div>
+  </div>
+</article>
+  </div>
+</section>
+</main>
+<footer class="site-footer">
+  <div class="shell footer-grid">
+    <div>
+      <div class="footer-brand">精选电影大全</div>
+      <p>精选多地区、多题材影片内容，提供清晰分类、热门推荐与高清在线播放入口。</p>
+    </div>
+    <div>
+      <h2>快速导航</h2>
+      <a href="./index.html">首页</a>
+      <a href="./categories.html">影片分类</a>
+      <a href="./rankings.html">排行榜</a>
+    </div>
+    <div>
+      <h2>热门栏目</h2>
+      <a href="./category-films.html">电影片库</a>
+      <a href="./category-series.html">剧集专区</a>
+      <a href="./category-animation.html">动画动漫</a>
+    </div>
+    <div>
+      <h2>服务支持</h2>
+      <p>邮箱: contact@movie.example</p>
+      <p>客服时间: 9:00 - 18:00</p>
+    </div>
+  </div>
+  <div class="shell footer-bottom">
+    <span>© 2026 精选电影大全. All rights reserved.</span>
+    <span>高清播放 · 热门电影 · 电影片库</span>
+  </div>
+</footer>
+  <script src="./assets/site.js" defer></script>
+<script>
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?60fa60a3da050a73eefefaaebe0afaf5";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+</script>
+</body>
+</html>
